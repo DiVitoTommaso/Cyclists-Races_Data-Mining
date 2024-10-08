@@ -9,22 +9,51 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 import random
 
+from pandas.plotting import boxplot
+
+
+def hist_plot(df, col):
+    sns.displot(df, x=col, kind="hist", row_order="desc", bins=15)
+    plt.xticks(rotation=90, ha="right")
+    plt.show()
+
+def box_plot(df, x, y):
+    sns.boxplot(x=x, y=y, data=df, palette='Set2')
+
+    # Rotate the x-axis labels for better readability
+    plt.xticks(rotation=90)
+
+    # Set the plot title and labels
+    plt.title('Birth Date Distribution by Nationality')
+    plt.xlabel('Nationality')
+    plt.ylabel('Birth Date')
+
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
+
+def scatter_plot(df, x, y):
+    sns.scatterplot(df, x=x, y=y)
+    plt.xticks(rotation=90, ha="right")
+    plt.show()
 
 # Load the CSV file using pandas
-class DataMiner:
+class DataCleaner:
     def __init__(self, races_csv, cyclist_csv):
-        tmp1 = pd.read_csv(races_csv, parse_dates=["date"])
-        tmp2 = pd.read_csv(cyclist_csv)
+        self.races_df = pd.read_csv(races_csv, parse_dates=["date"])
+        self.cyclist_df = pd.read_csv(cyclist_csv)
         self.df = pd.merge(
-            tmp1, tmp2, left_on="cyclist", right_on="_url", how="inner"
+            self.races_df, self.cyclist_df, left_on="cyclist", right_on="_url", how="inner"
         )
+
         self.delete_column("_url_y")
         self.delete_column("name_y")
         self.delete_column("is_cobbled")
         self.delete_column("is_gravel")
+
         self.df.rename(
             columns={
-                "name_x": "Location",
+                "name_x": "location",
                 "_url_x": "_url",
             },
             inplace=True,
@@ -58,9 +87,6 @@ class DataMiner:
     def columns_names(self):
         return self.df.columns
 
-    def sample(self, c):
-        return random.sample(self.df, c)
-
     def delete_column(self, col):
         self.df.drop(columns=[col], inplace=True)
 
@@ -88,29 +114,11 @@ class DataMiner:
         return tmp
 
     def enumerate_column_range(self, col):
-        tmp = set()
-        min_v = float("inf")
-        max_v = float("-inf")
-
-        if col in self.get_categorical_columns():
-            for _, row in self.df.iterrows():
-                tmp.add(row[col])
-
-            return tmp
-
-        if col in self.get_numerical_columns():
-            for _, row in self.df.iterrows():
-                min_v = min(min_v, row[col])
-                max_v = max(max_v, row[col])
-
-            return [min_v, max_v]
+       return self.df[col].unique()
 
     def find_rows_with_alternatives(self, col1, col2):
-        tmp = []
-        for _, row in self.df.iterrows():
-            if pd.isna(row[col1]) ^ pd.isna(row[col2]):
-                tmp.append(row["name_x"])
-        return tmp
+        mask = self.df[col1].isna() ^ self.df[col2].isna()
+        return self.df.loc[mask, 'name_x'].tolist()
 
     def check_are_alternatives(self, col1, col2):
         alternatives_rows = len(self.find_rows_with_alternatives(col1, col2))
@@ -120,12 +128,11 @@ class DataMiner:
             + f"It's true only for {alternatives_rows}/{self.rows_count()} rows"
         )
 
-    def get_missing_value_rows(self, col):
-        tmp = []
-        for _, row in self.df.iterrows():
-            if pd.isna(row[col]):
-                tmp.append(row["name_x"])
-        return tmp
+    def get_birth_date_distributions(self):
+        overall_distribution = self.df['birth_year'].describe()
+        nationality_distributions = self.df.groupby('nationality')['birth_year'].describe()
+
+        return overall_distribution, nationality_distributions
 
     def get_categorical_columns(self):
         return self.df.select_dtypes(
@@ -135,14 +142,13 @@ class DataMiner:
     def get_numerical_columns(self):
         return self.df.select_dtypes(include=["number"]).columns.tolist()
 
-    def hist_plot(self, col):
-        sns.displot(self.df, x=col, kind="hist", row_order="desc", bins=15)
-        plt.xticks(rotation=90, ha="right")
-        plt.show()
-
-    def scatter_plot(self, x, y):
-        sns.scatterplot(self.df, x=x, y=y)
-        plt.show()
+    def fix_missing_nationality(self):
+        mask = self.df['nationality'].isna()
+        # Only scott-davies does not have nationality => infer using wikipedia
+        cyclists = set(self.df.loc[mask, 'cyclist'])
+        for c in cyclists:
+            mask = self.df["cyclist"] == c
+            self.df.loc[mask, 'nationality'] = 'Britain'
 
     def reformat_date(self):
         for _, row in self.df.iterrows():
@@ -163,8 +169,11 @@ class DataMiner:
 # print(f"Categoricals columns: {categoricals_cols}")
 # print(f"Numerical columns: {numericals_cols}")
 
-# missing_cols = dm.inspect_for_missing()
-# print(f"Missing values in columns: {missing_cols}")
+dm = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
+box_plot(dm.cyclist_df, 'nationality', 'birth_year')
+v1, v2 = dm.get_birth_date_distributions()
+print(v1)
+print(v2)
 
 # dm.hist_plot("is_tarmac")
 # dm.hist_plot("is_cobbled")
@@ -174,9 +183,6 @@ class DataMiner:
 # dm.delete_column("Average temperature")
 
 # dm.check_are_alternatives("is_cobbled", "is_gravel")
-
-
-
 
 #dm = DataMiner(r"./dataset/races.csv", r"./dataset/cyclists.csv")
 #dm.export_csv()
