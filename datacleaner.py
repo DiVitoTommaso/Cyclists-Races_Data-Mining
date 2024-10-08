@@ -152,6 +152,10 @@ class DataMiner:
 
     def rows_count(self):
         return len(self.df)
+        
+    def export_csv(self):
+        return self.df.to_csv("./dataset/dataset.csv")
+    
 
 
 # categoricals_cols = dm.get_categorical_columns()
@@ -170,5 +174,13 @@ class DataMiner:
 # dm.delete_column("Average temperature")
 
 # dm.check_are_alternatives("is_cobbled", "is_gravel")
+
+
+
+
+#dm = DataMiner(r"./dataset/races.csv", r"./dataset/cyclists.csv")
+#dm.export_csv()
+
+
 
 # print("END")
