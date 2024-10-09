@@ -7,10 +7,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from datetime import datetime
-import random
-
-from pandas.plotting import boxplot
-
 
 def hist_plot(df, col):
     sns.displot(df, x=col, kind="hist", row_order="desc", bins=15)
@@ -142,13 +138,16 @@ class DataCleaner:
     def get_numerical_columns(self):
         return self.df.select_dtypes(include=["number"]).columns.tolist()
 
-    def fix_missing_nationality(self):
+    def fix_cyclist(self):
+        # Fix scott-davies using wikipedia
         mask = self.df['nationality'].isna()
-        # Only scott-davies does not have nationality => infer using wikipedia
         cyclists = set(self.df.loc[mask, 'cyclist'])
         for c in cyclists:
             mask = self.df["cyclist"] == c
             self.df.loc[mask, 'nationality'] = 'Britain'
+            self.df.loc[mask, 'birth_year'] = 1995
+            for _, row in self.df.iterrows():
+                row['cyclist_age'] = datetime.strptime(row["date"], "%Y-%m-%d %H:%M:%S") - datetime.strptime("1995-08-05", "%Y-%m-%d")
 
     def reformat_date(self):
         for _, row in self.df.iterrows():
