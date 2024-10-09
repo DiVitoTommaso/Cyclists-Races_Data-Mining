@@ -169,11 +169,11 @@ class DataCleaner:
 # print(f"Categoricals columns: {categoricals_cols}")
 # print(f"Numerical columns: {numericals_cols}")
 
-dm = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
-box_plot(dm.cyclist_df, 'nationality', 'birth_year')
-v1, v2 = dm.get_birth_date_distributions()
-print(v1)
-print(v2)
+#dm = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
+#box_plot(dm.cyclist_df, 'nationality', 'birth_year')
+#v1, v2 = dm.get_birth_date_distributions()
+#print(v1)
+#print(v2)
 
 # dm.hist_plot("is_tarmac")
 # dm.hist_plot("is_cobbled")
