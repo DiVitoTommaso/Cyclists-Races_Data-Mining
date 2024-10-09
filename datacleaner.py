@@ -20,9 +20,9 @@ def box_plot(df, x, y):
     plt.xticks(rotation=90)
 
     # Set the plot title and labels
-    plt.title('Birth Date Distribution by Nationality')
-    plt.xlabel('Nationality')
-    plt.ylabel('Birth Date')
+    plt.title('Distribution')
+    plt.xlabel(x)
+    plt.ylabel(y)
 
     # Show the plot
     plt.tight_layout()
@@ -36,17 +36,22 @@ def scatter_plot(df, x, y):
 # Load the CSV file using pandas
 class DataCleaner:
     def __init__(self, races_csv, cyclist_csv):
+        # So keep ref to all datasets and make one joined
         self.races_df = pd.read_csv(races_csv, parse_dates=["date"])
         self.cyclist_df = pd.read_csv(cyclist_csv)
         self.df = pd.merge(
             self.races_df, self.cyclist_df, left_on="cyclist", right_on="_url", how="inner"
         )
 
+        # Delete useless columns
         self.delete_column("_url_y")
         self.delete_column("name_y")
+
+        # Delete columns that are all false
         self.delete_column("is_cobbled")
         self.delete_column("is_gravel")
 
+        # Rename to understand better
         self.df.rename(
             columns={
                 "name_x": "location",
@@ -80,63 +85,84 @@ class DataCleaner:
             inplace=True,
         )"""
 
-    def columns_names(self):
-        return self.df.columns
-
+    # Delete a column
     def delete_column(self, col):
         self.df.drop(columns=[col], inplace=True)
 
+    # Replace NaN in specied column with default value
     def replace_NaN(self, column, value):
         self.df[column].fillna(value, inplace=True)
 
-    # Loop through each column to get counts
-    def inspect_for_missing(self):
+    # Get information from the dataset
+    def describe(self):
         print(
             f"{'Column':<30} | {'Non-null count':<15} | {'Total count':<15} | {'Missing':<15}"
         )
         tmp = []
-        for column in self.columns_names():
-            non_null_count = self.df[
-                column
-            ].count()  # Count of non-null values
-            total_count = len(self.df[column])  # Total number of values
-            print(
-                f"{column:<30} | {non_null_count:<15} | {total_count:<15} | {total_count != non_null_count}"
+        total = len(self.df)  # Total number of values
+        for column in self.df.columns:
+            non_null_count = self.df[column].count()  # Count of non-null values
+            print(f"{column:<30} | {non_null_count:<15} | {total:<15} | {total != non_null_count}"
             )
 
-            if total_count != non_null_count:
+            if total != non_null_count:
                 tmp.append(column)
 
         return tmp
 
+    # Get range of values of a column
     def enumerate_column_range(self, col):
        return self.df[col].unique()
 
-    def find_rows_with_alternatives(self, col1, col2):
+    # Check if columns are mutually exclusive
+    def are_xor_columns(self, col1, col2):
         mask = self.df[col1].isna() ^ self.df[col2].isna()
-        return self.df.loc[mask, 'name_x'].tolist()
+        res = self.df.loc[mask, 'name_x'].tolist()
+        return len(res) == len(self.df)
 
-    def check_are_alternatives(self, col1, col2):
-        alternatives_rows = len(self.find_rows_with_alternatives(col1, col2))
-        print(
-            f"Columns: {col1}, {col2} "
-            + f"{'YES. Columns are alternatives' if alternatives_rows == self.rows_count() else 'NO. Columns are not alternatives'}. "  # noqa
-            + f"It's true only for {alternatives_rows}/{self.rows_count()} rows"
-        )
-
-    def get_birth_date_distributions(self):
-        overall_distribution = self.df['birth_year'].describe()
-        nationality_distributions = self.df.groupby('nationality')['birth_year'].describe()
+    # Get distribution of birth year overall and by nationality to fix missing values
+    def get_birth_distributions(self):
+        overall_distribution = self.cyclist_df['birth_year'].describe()
+        nationality_distributions = self.cyclist_df.groupby('nationality')['birth_year'].describe()
 
         return overall_distribution, nationality_distributions
 
-    def get_categorical_columns(self):
-        return self.df.select_dtypes(
-            include=["object", "category", "bool"]
-        ).columns.tolist()
+    # Get distribution of age overall and by nationality to fix missing values. Really needed?
+    def get_age_distributions(self):
+        overall_distribution = self.cyclist_df.groupby('cyclist_age')['cyclist_age'].describe()
+        nationality_distributions = self.cyclist_df.groupby(['cyclist_age', 'nationality'])['cyclist_age'].describe()
+
+        return overall_distribution, nationality_distributions
+
+    # Get distribution of age overall and by nationality to fix missing values
+    def get_height_distributions(self):
+        overall_distribution = self.cyclist_df['height'].describe()
+        nationality_distributions = self.cyclist_df.groupby('nationality')['height'].describe()
+
+        return overall_distribution, nationality_distributions
+
+    # Get distribution of weight overall and by nationality to fix missing values
+    def get_weight_distributions(self):
+        overall_distribution = self.cyclist_df['weight'].describe()
+        nationality_distributions = self.cyclist_df.groupby('nationality')['weight'].describe()
+
+        return overall_distribution, nationality_distributions
+
+    # Assume NaN == No team. Cyclist rode without a team
+    def fix_missing_team(self):
+        self.replace_NaN('cyclist_team', 'No team')
+
+    # How can we fix it? No climb ==> ??? Some profiles with 'hilly' or 'mountains' has nan
+    def get_climb_distributions(self):
+        profile_distributions = self.cyclist_df.groupby('profile')['climb_total'].describe()
+
+        return profile_distributions
 
     def get_numerical_columns(self):
         return self.df.select_dtypes(include=["number"]).columns.tolist()
+
+    def get_categorical_columns(self):
+        return self.df.select_dtypes(include=["object", "category", "bool"]).columns.tolist()
 
     def fix_cyclist(self):
         # Fix scott-davies using wikipedia
@@ -168,7 +194,8 @@ class DataCleaner:
 # print(f"Categoricals columns: {categoricals_cols}")
 # print(f"Numerical columns: {numericals_cols}")
 
-#dm = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
+dm = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
+print(dm.describe())
 #box_plot(dm.cyclist_df, 'nationality', 'birth_year')
 #v1, v2 = dm.get_birth_date_distributions()
 #print(v1)
