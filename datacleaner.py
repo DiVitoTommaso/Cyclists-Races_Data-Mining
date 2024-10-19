@@ -55,35 +55,10 @@ class DataCleaner:
         self.df.rename(
             columns={
                 "name_x": "location",
-                "_url_x": "_url",
+                "_url_x": "id",
             },
             inplace=True,
         )
-        """
-        self.df.rename(
-            columns={
-                "name_x": "Location",
-                "profile": "Difficulty",
-                "date": "Date",
-                "cyclist": "Cyclist name",
-                "cyclist_team": "Cyclist Team",
-                "nationality": "Nationality",
-                "points": "Primary points",
-                "uci_points": "Secondary points",
-                "length": "Circuit length",
-                "position": "Arrival position",
-                "climb_total": "Climb length",
-                "cyclist_age": "Cyclist age",
-                "delta": "Time from first",
-                "birth_year": "Birth year",
-                "weight": "Weight",
-                "height": "Height",
-                "startlist_quality": "Participants strength",
-                "average_temperature": "Average temperature",
-                "is_tarmac": "Is circuit on tarmac",
-            },
-            inplace=True,
-        )"""
 
     # Delete a column
     def delete_column(self, col):
@@ -164,8 +139,8 @@ class DataCleaner:
     def get_categorical_columns(self):
         return self.df.select_dtypes(include=["object", "category", "bool"]).columns.tolist()
 
+    # Fix cyclist with missing nationality and birth year (scott-davies) using wikipedia
     def fix_cyclist(self):
-        # Fix scott-davies using wikipedia
         mask = self.df['nationality'].isna()
         cyclists = set(self.df.loc[mask, 'cyclist'])
         for c in cyclists:
@@ -195,7 +170,7 @@ class DataCleaner:
 # print(f"Numerical columns: {numericals_cols}")
 
 dm = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
-print(dm.describe())
+print(f"{sorted(dm.cyclist_df['weight'].unique())}")
 #box_plot(dm.cyclist_df, 'nationality', 'birth_year')
 #v1, v2 = dm.get_birth_date_distributions()
 #print(v1)
