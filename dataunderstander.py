@@ -1,13 +1,10 @@
-
-import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-from datetime import datetime
-import scipy
 from sklearn.preprocessing import StandardScaler
 from datacleaner import DataCleaner
+import seaborn as sns
 
-cleaner = DataCleaner('./dataset/races.csv', './dataset/cyclists.csv')
+cleaner = DataCleaner("./dataset/races.csv", "./dataset/cyclists.csv")
+
 
 class DataUnderstander:
     def __init__(self, dc):
@@ -17,7 +14,9 @@ class DataUnderstander:
 
     def correlate(self):
         correlations = {
-            correlation_type: self.df.corr(numeric_only=True, method=correlation_type)
+            correlation_type: self.df.corr(
+                numeric_only=True, method=correlation_type
+            )
             for correlation_type in ("kendall", "pearson", "spearman")
         }
 
@@ -32,21 +31,39 @@ class DataUnderstander:
             plt.figure(figsize=(12, 12))
 
             # Plot the heatmap
-            sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
+            sns.heatmap(
+                corr_matrix,
+                annot=True,
+                cmap="coolwarm",
+                fmt=".2f",
+                linewidths=0.5,
+            )
 
             # Set the title for the plot
-            plt.title(f'{corr_type.capitalize()} Correlation')
+            plt.title(f"{corr_type.capitalize()} Correlation")
 
             # Display the plot
             plt.show()
-    
+
     def normalize(self):
-        numeric_columns = ['points', 'length', 'climb_total', 'profile', 'startlist_quality', 'cyclist_age', 'delta', 'birth_year', 'weight', 'height']
-        scaler = StandardScaler() #Si prova con la zscore ora eh 
-        self.df[numeric_columns] = scaler.fit_transform(self.df[numeric_columns])
+        numeric_columns = [
+            "points",
+            "length",
+            "climb_total",
+            "profile",
+            "startlist_quality",
+            "cyclist_age",
+            "delta",
+            "birth_year",
+            "weight",
+            "height",
+        ]
+        scaler = StandardScaler()  # Si prova con la zscore ora eh
+        self.df[numeric_columns] = scaler.fit_transform(
+            self.df[numeric_columns]
+        )
 
-    
 
-dm = DataUnderstander(cleaner)
-dm.normalize()
-print(dm.correlate())
+# dm = DataUnderstander(cleaner)
+# dm.normalize()
+# print(dm.correlate())
