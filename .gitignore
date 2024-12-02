@@ -1,6 +1,7 @@
 #random files
 dataset/
-output.txt
+results/*
+!results/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
