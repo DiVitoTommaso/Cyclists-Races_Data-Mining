@@ -115,7 +115,7 @@ def kmeans_explore(
 
 
 def save_kmeans_results(kmeans_list, sse, output_file):
-    with lz4.frame.open(output_file, "wb") as f:
+    with lz4.frame.open(output_file, "wb+") as f:
         pickle.dump((kmeans_list, sse), f)
 
 
@@ -210,3 +210,30 @@ def compute_distance_matrix(df, metric="euclidean", cat_features=[], cache_file=
             pickle.dump(distance_matrix, f)
 
     return distance_matrix
+
+
+"""
+X: La matrice dei dati, dove ogni riga rappresenta un punto e ogni colonna una caratteristica.
+k: Numero di vicini più prossimi da considerare per ogni punto (default: 5).
+strata: Numero di strati in cui suddividere le distanze medie dei vicini (default: 10).
+m: Numero di campioni da prelevare da ciascuno strato per costruire il grafico delle distanze (default: 5).
+"""
+from sklearn.neighbors import NearestNeighbors
+
+def stratified_sampling(X, k=5, strata=10, m=5):
+    # Calcolo delle distanze k-nearest neighbors
+    nbrs = NearestNeighbors(n_neighbors=k).fit(X)
+    distances, _ = nbrs.kneighbors(X)
+
+    # Media delle distanze dei k-nearest neighbors per ogni punto
+    avg_distances = np.mean(distances[:, 1:], axis=1)
+
+    # Stratificazione delle distanze
+    strata_limits = np.linspace(min(avg_distances), max(avg_distances), strata + 1)
+    sampled_indices = []
+    for i in range(strata):
+        stratum_indices = np.where((avg_distances >= strata_limits[i]) & (avg_distances < strata_limits[i + 1]))[0]
+        if len(stratum_indices) > 0:
+            sampled_indices.extend(np.random.choice(stratum_indices, min(m, len(stratum_indices)), replace=False))
+    return X.iloc[sampled_indices]
+
