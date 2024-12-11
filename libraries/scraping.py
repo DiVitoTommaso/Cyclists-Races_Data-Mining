@@ -135,3 +135,64 @@ def clean(df_races: pd.DataFrame) -> pd.DataFrame:
         assert all(x <= y for x, y in zip(df_stage.delta, df_stage.delta[1:]))
 
     return df_races
+
+
+def scrape2(df_races: pd.DataFrame) -> pd.DataFrame:
+
+    # get _url which have negative delta
+    bad_urls = df_races.loc[df_races["delta"] < 0, "_url"]
+    bad_urls = bad_urls.unique()
+
+    print("Scraping negative deltas")
+    print("Negative deltas found in:")
+    for RACE_URL in bad_urls:
+
+        stage = pcs.Stage(f"race/{RACE_URL}")
+        print(stage)
+        ranking = stage.results("rider_url", "time", "rank")
+        # for i in sorted(ranking,key = lambda x: x['rank']):
+        #    print(i)
+
+        # convert ranking to pandas table, ranking is a list of objects
+        df_ranking = pd.DataFrame(ranking)
+
+        # df_ranking["time"] = df_ranking["time"].apply(time_to_seconds)
+
+        # first time is the time of the winner
+        first_time = time_to_seconds(df_ranking["time"].loc[0])
+
+        # # sum first time to all other negative times
+        # df_ranking["time"] = df_ranking["time"].apply(
+        #     lambda x: x if x > 0 else first_time + x
+        # )
+
+        df_ranking.loc[0, "time"] = 0
+
+        df_ranking.rider_url = df_ranking.rider_url.apply(lambda x: x.split("/")[-1])
+
+        for i in range(len(df_ranking)):
+            rider = df_ranking.loc[i, "rider_url"]
+            mask = (df_races._url == RACE_URL) & (df_races.cyclist == rider)
+            try:
+                delta_value = df_races.loc[mask, "delta"].values[0]
+            except IndexError:
+                continue
+            # time = df_ranking.loc[i, "time"]
+
+            df_races.loc[
+                mask,
+                "delta",
+            ] = (
+                first_time + delta_value if delta_value < 0 else delta_value
+            )
+
+        # print(
+        #     df_races.loc[
+        #         (df_races._url == RACE_URL),
+        #         "delta",
+        #     ]
+        # )
+
+    # check if delta contains positive floats
+    assert all(x.is_integer() for x in df_races.delta.dropna())
+    return df_races
