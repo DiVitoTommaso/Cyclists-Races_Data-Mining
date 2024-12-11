@@ -75,7 +75,7 @@ willy-vigouroux,Willy  Vigouroux,1956.0,,Belgium,23.627906976744185,43,,Europe
 jens-wallays,Jens  Wallays,1992.0,176.0,Belgium,65.04347826086956,23,20.66115702479339,Europe
 mads-pedersen,Mads  Pedersen,1995.0,180.0,Denmark,29.10576923076923,104,21.604938271604937,Europe
 jose-herrada,José  Herrada,1985.0,175.0,Spain,43.10144927536232,69,21.224489795918366,Europe
-idar-andersen,Idar  Andersen,1999.0,182.0,Norway,36.604166666666664,48,21.615746890472163,Europe
+idar-andersen,Idar  Andersen,1999.0,182.0,Norway,36.604166666666664,48,20.589300809081028,Europe
 sylvain-moniquet,Sylvain  Moniquet,1998.0,175.0,Belgium,67.42105263157895,19,19.918367346938776,Europe
 pedro-miguel-lopes,Pedro Miguel  Lopes,1999.0,180.0,Portugal,58.82666666666667,75,20.98765432098765,Europe
 adriano-baffi,Adriano  Baffi,1962.0,176.0,Italy,41.333333333333336,30,22.59814049586777,Europe
@@ -113,7 +113,7 @@ jay-sweet,Jay  Sweet,1975.0,175.0,Australia,43.69107551487414,437,22.53061224489
 nic-hamilton,Nic  Hamilton,1986.0,,Canada,52.260475651189125,883,,North America
 enrico-barbin,Enrico  Barbin,1990.0,166.0,Italy,49.84126984126984,567,21.773842357381334,Europe
 alain-van-den-bossche,Alain Van Den Bossche,1965.0,,Belgium,54.953271028037385,321,,Europe
-mario-de-sarraga,Mario de Sárraga,1980.0,181.0,Spain,44.64009111617312,439,21.06162815542871,Europe
+mario-de-sarraga,Mario de Sárraga,1980.0,178.8,Spain,44.64009111617312,439,21.583111871837602,Europe
 hubert-arbes,Hubert  Arbès,1950.0,,France,53.987096774193546,155,,Europe
 kevin-seeldraeyers,Kevin  Seeldraeyers,1986.0,174.0,Belgium,65.94299674267101,614,19.817677368212443,Europe
 peter-van-de-knoop,Peter Van De Knoop,1957.0,,Netherlands,31.34423076923077,520,,Europe
@@ -218,7 +218,7 @@ dietrich-thurau,Dietrich  Thurau,1954.0,,Germany,112.10437710437711,297,,Europe
 arnaud-gerard,Arnaud  Gérard,1984.0,184.0,France,95.56976744186046,172,20.6758034026465,Europe
 christophe-lavainne,Christophe  Lavainne,1963.0,,France,82.05952380952381,168,,Europe
 gonzalo-rabunal-rios,Gonzalo  Rabuñal,1984.0,180.0,Spain,93.57839721254355,287,20.061728395061728,Europe
-thomas-bonnet,Thomas  Bonnet,1998.0,175.0,France,82.72911392405064,395,20.440816326530612,Europe
+thomas-bonnet,Thomas  Bonnet,1998.0,175.0,France,82.72911392405064,395,21.355102040816327,Europe
 jean-jacques-philipp,Jean-Jacques  Philipp,1961.0,,France,95.02288984263234,699,,Europe
 nico-verhoeven,Nico  Verhoeven,1961.0,,Netherlands,95.3076923076923,156,,Europe
 laurent-chotard,Laurent  Chotard,1976.0,,France,101.67091836734694,392,,Europe
@@ -260,7 +260,7 @@ bruno-cenghialta,Bruno  Cenghialta,1962.0,184.0,Italy,100.24050632911393,79,21.5
 johan-bruyneel,Johan  Bruyneel,1964.0,182.0,Belgium,75.61507936507937,252,21.434609346697258,Europe
 martin-prazdnovsky,Martin  Prázdnovský,1975.0,,Slovakia,62.563380281690144,71,,Europe
 dorian-godon,Dorian  Godon,1996.0,191.0,France,101.48387096774194,186,20.010416381129904,Europe
-syver-waersted,Syver  Wærsted,1996.0,193.0,Norway,127.1063829787234,47,21.42339391661521,Europe
+syver-waersted,Syver  Wærsted,1996.0,193.0,Norway,127.1063829787234,47,21.369701200032214,Europe
 antonio-bucciero,Antonio  Bucciero,1982.0,,Italy,92.53086419753086,81,,Europe
 julien-stassen,Julien  Stassen,1988.0,182.0,Belgium,89.61813186813187,364,19.925129815239703,Europe
 markus-hoelgaard,Markus  Hoelgaard,1994.0,188.0,Norway,83.22485207100591,169,20.937075599818925,Europe
@@ -354,7 +354,7 @@ juan-carlos-martin,Juan Carlos  Martin,1967.0,,Spain,79.03964757709251,227,,Euro
 eddy-beugels,Eddy  Beugels,1944.0,,Netherlands,36.954887218045116,266,,Europe
 jacques-van-meer,Jacques van Meer,1958.0,,Netherlands,45.33561643835616,292,,Europe
 matthew-stephens,Matthew  Stephens,1970.0,182.0,Great Britain,31.947976878612717,519,19.32133800265668,Europe
-loe-van-belle,Loe van Belle,2002.0,184.0,Netherlands,52.49240121580547,329,22.03449905482041,Europe
+loe-van-belle,Loe van Belle,2002.0,184.0,Netherlands,52.49240121580547,329,21.561909262759922,Europe
 leonardo-scarselli,Leonardo  Scarselli,1975.0,180.0,Italy,40.796747967479675,369,20.679012345679013,Europe
 maxime-mederel,Maxime  Méderel,1980.0,173.0,France,71.13157894736842,228,19.713321527615356,Europe
 lukas-ruegg,Lukas  Rüegg,1996.0,177.0,Switzerland,76.90680100755668,397,21.06674327300584,Europe
@@ -402,10 +402,10 @@ jean-patrick-nazon,Jean-Patrick  Nazon,1977.0,182.0,France,88.7233676975945,582,
 marek-canecky,Marek  Čanecký,1988.0,187.0,Slovakia,41.36503067484663,326,20.58966513197403,Europe
 stefan-kung,Stefan  Küng,1993.0,193.0,Switzerland,76.75042735042734,585,22.28247738194314,Europe
 mathew-hayman,Mathew  Hayman,1978.0,190.0,Australia,63.654296875,512,21.606648199445985,Oceania
-negasi-abreha,Negasi Haylu  Abreha,2000.0,186.0,Ethiopia,103.79295154185021,227,21.33194588969823,Africa
+negasi-abreha,Negasi Haylu  Abreha,2000.0,186.0,Ethiopia,103.79295154185021,227,21.216325586773035,Africa
 robin-chaigneau,Robin  Chaigneau,1988.0,185.0,Netherlands,88.09604519774011,177,23.37472607742878,Europe
 jean-jacques-henry,Jean-Jacques  Henry,1967.0,,France,75.48283261802575,466,,Europe
-davide-baldaccini,Davide  Baldaccini,1998.0,176.0,Italy,58.0990990990991,333,22.210743801652892,Europe
+davide-baldaccini,Davide  Baldaccini,1998.0,176.0,Italy,58.0990990990991,333,21.5650826446281,Europe
 laudelino-cubino,Laudelino  Cubino,1963.0,,Spain,48.689008042895445,746,,Europe
 joel-suter,Joel  Suter,1998.0,190.0,Switzerland,108.16197183098592,426,20.775623268698062,Europe
 arnoud-van-groen,Arnoud van Groen,1983.0,183.0,Netherlands,77.88739946380697,373,20.603780345785182,Europe
@@ -440,7 +440,7 @@ rolf-haller,Rolf  Haller,1957.0,,Germany,37.23154362416108,298,,Europe
 carlos-muniz,Carlos  Muñiz,1964.0,,Spain,82.28413284132841,271,,Europe
 marco-tizza,Marco  Tizza,1992.0,173.0,Italy,48.77171215880893,403,19.37919743392696,Europe
 sam-bewley,Sam  Bewley,1987.0,191.0,New Zealand,47.42627345844504,373,22.20333872426743,Oceania
-pier-andre-cote,Pier-André  Côté,1997.0,181.0,Canada,43.89396709323583,547,19.413326821525594,North America
+pier-andre-cote,Pier-André  Côté,1997.0,181.0,Canada,43.89396709323583,547,20.695338970116907,North America
 angel-de-las-heras,Ángel  de las Heras,1957.0,,Spain,68.24657534246575,292,,Europe
 andre-massard,André  Massard,1957.0,,Switzerland,60.912921348314605,356,,Europe
 fabien-patanchon,Fabien  Patanchon,1983.0,179.0,France,93.85016286644951,307,21.534908398614277,Europe
@@ -471,7 +471,7 @@ warren-barguil,Warren  Barguil,1991.0,183.0,France,50.45177664974619,394,18.2149
 john-dekeukelaere,John  Dekeukelaere,1962.0,,Belgium,94.24806201550388,129,,Europe
 unai-cuadrado,Unai  Cuadrado,1997.0,,Spain,60.9774011299435,354,,Europe
 gines-garcia-pallares,Ginés  García,1959.0,,Spain,58.04123711340206,485,,Europe
-valere-thiebaud,Valère  Thiébaud,1999.0,184.0,Switzerland,80.47286821705427,129,22.03449905482041,Europe
+valere-thiebaud,Valère  Thiébaud,1999.0,184.0,Switzerland,80.47286821705427,129,21.561909262759922,Europe
 andrei-kunitski,Andrei  Kunitski,1984.0,176.0,Belarus,55.09345794392523,321,23.243801652892564,Europe
 jose-manuel-uria,José Manuel  Uría,1969.0,,Spain,99.48571428571428,70,,Europe
 renzo-ragnetti,Renzo  Ragnetti,1973.0,,Italy,65.27124183006536,306,,Europe
@@ -483,7 +483,7 @@ marc-sergeant,Marc  Sergeant,1959.0,187.0,Belgium,86.51324503311258,302,21.73353
 marc-vercammen,Marc  Vercammen,1960.0,,Belgium,61.878787878787875,99,,Europe
 pol-verschuere,Pol  Verschuere,1955.0,,Belgium,62.488,250,,Europe
 alexey-tsatevich,Alexey  Tsatevich,1989.0,169.0,Russia,74.27570093457943,428,22.40817898532965,Europe
-louis-bendixen,Louis  Bendixen,1995.0,190.0,Denmark,80.602787456446,287,20.66481994459834,Europe
+louis-bendixen,Louis  Bendixen,1995.0,190.0,Denmark,80.602787456446,287,21.218836565096954,Europe
 luis-edgar-espinosa-sepulveda,Luis Edgar  Espinosa,1967.0,,Colombia,81.51173708920187,213,,South America
 thomas-frei,Thomas  Frei,1985.0,178.0,Switzerland,53.561023622047244,508,22.408786769347305,Europe
 felix-odebrecht,Felix  Odebrecht,1984.0,,Germany,65.48249027237354,257,,Europe
@@ -565,7 +565,7 @@ jose-maria-yurrebaso,José Maria  Yurrebaso,1955.0,,Spain,51.46534653465346,202,
 aad-van-den-hoek,Aad van den Hoek,1951.0,186.0,Netherlands,53.560402684563755,298,22.25690831309978,Europe
 julio-alberto-perez-cuapio,Julio Alberto  Perez Cuapio,1977.0,171.0,Mexico,45.33561643835616,292,19.835162956123252,North America
 john-bogers,John  Bogers,1964.0,,Netherlands,71.85365853658537,246,,Europe
-robin-carpenter,Robin  Carpenter,1992.0,178.0,United States,45.28426395939086,197,20.893826537053403,North America
+robin-carpenter,Robin  Carpenter,1992.0,178.0,United States,45.28426395939086,197,20.45196313596768,North America
 radoslav-rogina,Radoslav  Rogina,1979.0,186.0,Croatia,54.36293436293436,518,20.23355301190889,Europe
 ivan-santos,Iván  Santos,1982.0,,Spain,43.79127725856698,642,,Europe
 richard-chassot,Richard  Chassot,1970.0,,Switzerland,46.87958115183246,191,,Europe
@@ -685,7 +685,7 @@ dante-coccolo,Dante  Coccolo,1954.0,,France,86.74893617021277,235,,Europe
 august-herijgers,August  Herijgers,1950.0,,Belgium,111.04,100,,Europe
 michel-zanoli,Michel  Zanoli,1968.0,,Netherlands,91.74617737003058,327,,Europe
 roland-vogeli,Roland  Vogeli,1959.0,,Switzerland,95.42857142857143,196,,Europe
-frank-hoste,Frank  Hoste,1955.0,188.4,Belgium,105.29735682819383,454,21.41173182594741,Europe
+frank-hoste,Frank  Hoste,1955.0,187.6,Belgium,105.29735682819383,454,21.59473724887594,Europe
 barry-hoban,Barry  Hoban,1940.0,,Great Britain,82.9041095890411,73,,Europe
 maxim-rudenko,Maxim  Rudenko,1979.0,,Ukraine,95.07920792079207,101,,Europe
 willy-van-neste,Willy Van Neste,1944.0,,Belgium,100.74025974025975,385,,Europe
@@ -718,7 +718,7 @@ gleb-brussenskiy,Gleb  Brussenskiy,2000.0,178.0,Kazakhstan,43.79127725856698,642
 amaro-manuel-antunes,Amaro  Antunes,1990.0,173.0,Portugal,33.77902621722846,534,19.37919743392696,Europe
 manuel-luis-campos-abreu,Manuel Luis Campos  Abreu,1963.0,,Portugal,31.947976878612717,519,,Europe
 reto-bergmann,Reto  Bergmann,1976.0,183.0,Switzerland,50.85054347826087,368,20.305174833527424,Europe
-vicente-belda,Vicente  Belda,1954.0,154.0,Spain,36.55882352941177,272,22.263450834879407,Europe
+vicente-belda,Vicente  Belda,1954.0,154.0,Spain,36.55882352941177,272,22.600775847529096,Europe
 daniel-freitas,Daniel  Freitas,1991.0,171.0,Portugal,52.95163806552262,641,21.887076365377382,Europe
 giovanni-lonardi,Giovanni  Lonardi,1996.0,180.0,Italy,71.13157894736842,228,21.604938271604937,Europe
 michael-rasmussen,Michael  Rasmussen,1974.0,174.0,Denmark,49.188081936685286,537,19.157088122605362,Europe
@@ -903,7 +903,7 @@ erwin-nijboer,Erwin  Nijboer,1964.0,,Netherlands,63.63157894736842,19,,Europe
 david-etxebarria,David  Etxebarria,1973.0,164.0,Spain,71.32967032967034,91,20.449137418203453,Europe
 rui-carvalho,Rui  Carvalho,1995.0,175.0,Portugal,65.04347826086956,23,19.591836734693878,Europe
 fabrizio-fabbri,Fabrizio  Fabbri,1948.0,,Italy,54.19553072625698,179,,Europe
-emanuel-duarte,Emanuel  Duarte,1997.0,182.0,Portugal,56.98571428571429,70,21.615746890472163,Europe
+emanuel-duarte,Emanuel  Duarte,1997.0,182.0,Portugal,56.98571428571429,70,20.589300809081028,Europe
 christophe-moreau,Christophe  Moreau,1971.0,186.0,France,66.91111111111111,45,20.522603769221874,Europe
 antonio-rizzi,Antonio  Rizzi,1978.0,,Italy,87.94814814814815,135,,Europe
 julian-usano-martinez,Julian  Usano,1976.0,178.0,Spain,51.38461538461539,52,19.568236333796236,Europe
@@ -925,7 +925,7 @@ jose-adrian-bonilla,José Adrián  Bonilla,1978.0,178.0,Costa Rica,52.5446428571
 lorenzo-ferdeghini,Lorenzo  Ferdeghini,1971.0,,Italy,23.627906976744185,43,,Europe
 federico-zurlo,Federico  Zurlo,1994.0,178.0,Italy,44.62068965517241,203,22.093170054286073,Europe
 fernando-sousa-fernandes,Fernando  Fernandes Sousa,1956.0,,Portugal,28.96470588235294,85,,Europe
-embret-svestad-bardseng,Embret  Svestad-Bårdseng,2002.0,185.0,Norway,27.436781609195403,87,21.563184806428048,Europe
+embret-svestad-bardseng,Embret  Svestad-Bårdseng,2002.0,185.0,Norway,27.436781609195403,87,21.212563915266614,Europe
 sylvain-golay,Sylvain  Golay,1972.0,,Switzerland,59.1764705882353,34,,Europe
 egidijus-juodvalkis,Egidijus  Juodvalkis,1988.0,182.0,Lithuania,16.09220985691574,629,22.03840115928028,Europe
 geoffrey-demeyere,Geoffrey  Demeyere,1976.0,,Belgium,53.06060606060606,33,,Europe
@@ -953,7 +953,7 @@ jose-maria-gonzalez-barcala,Jose Maria  Gonzalez,1959.0,,Spain,74.04347826086956
 luis-felipe-laverde-jimenez,Luis Felipe  Laverde,1979.0,169.0,Colombia,64.50434782608696,230,22.058051188683873,South America
 fredy-gonzalez,Freddy Excelino  González,1975.0,160.0,Colombia,51.611111111111114,36,21.484374999999996,South America
 luis-fernandes,Luís  Fernandes,1987.0,173.0,Portugal,66.79503105590062,161,21.04981790236894,Europe
-joaquim-adrego-pereira-andrade,Joaquim Adrego Pereira  Andrade,1969.0,175.0,Portugal,62.58974358974359,78,20.440816326530612,Europe
+joaquim-adrego-pereira-andrade,Joaquim Adrego Pereira  Andrade,1969.0,175.0,Portugal,62.58974358974359,78,21.355102040816327,Europe
 fernando-quevedo,Fernando  Quevedo,1964.0,,Spain,41.51851851851852,27,,Europe
 gaztanaga-echevarria,Mikel  Gaztañaga,1979.0,,Spain,69.36538461538461,104,,Europe
 christophe-brandt,Christophe  Brandt,1977.0,182.0,Belgium,73.94444444444444,18,19.925129815239703,Europe
@@ -1014,7 +1014,7 @@ alessandro-bertolini,Alessandro  Bertolini,1971.0,171.0,Italy,69.96103896103897,
 adrie-van-der-poel,Adrie van der Poel,1959.0,181.0,Netherlands,61.71848739495798,238,21.36686914318855,Europe
 santos-hernandez,Santos  Hernandez,1967.0,,Spain,115.3529411764706,34,,Europe
 gianluca-bordignon,Gianluca  Bordignon,1966.0,,Italy,83.89242053789731,409,,Europe
-davide-orrico,Davide  Orrico,1990.0,178.6,Italy,66.72307692307692,455,21.94497704555401,Europe
+davide-orrico,Davide  Orrico,1990.0,180.6,Italy,66.72307692307692,455,21.461622326954938,Europe
 staf-scheirlinckx,Staf  Scheirlinckx,1979.0,192.0,Belgium,95.04676258992805,278,21.158854166666668,Europe
 giovanni-moro,Giovanni  Moro,1958.0,,Italy,83.81453634085213,399,,Europe
 ezio-serpelloni,Ezio  Serpelloni,1959.0,,Italy,44.06111111111111,180,,Europe
@@ -1124,7 +1124,7 @@ stephan-schreck,Stephan  Schreck,1978.0,185.0,Germany,91.88489208633094,278,22.2
 philippe-bouvatier,Philippe  Bouvatier,1964.0,,France,60.666666666666664,3,,Europe
 frans-verhaegen,Frans  Verhaegen,1948.0,,Belgium,46.828125,64,,Europe
 antonio-d-alonzo,Antonio  D'alonzo,1955.0,,Italy,37.27272727272727,11,,Europe
-jacob-eriksson,Jacob  Eriksson,1999.0,182.0,Sweden,83.5909090909091,22,21.615746890472163,Europe
+jacob-eriksson,Jacob  Eriksson,1999.0,182.0,Sweden,83.5909090909091,22,20.589300809081028,Europe
 lilian-calmejane,Lilian  Calmejane,1992.0,184.0,France,39.60504201680672,119,20.6758034026465,Europe
 ferdinand-bracke,Ferdinand  Bracke,1939.0,184.0,Belgium,29.906077348066297,181,23.334120982986768,Europe
 thijs-al,Thijs  Al,1980.0,180.0,Netherlands,41.4054054054054,37,22.22222222222222,Europe
@@ -1176,7 +1176,7 @@ marco-votolo,Marco Franco  Votolo,1964.0,,Italy,46.87958115183246,191,,Europe
 jan-barta,Jan  Bárta,1984.0,184.0,Czech Republic,75.92156862745098,204,22.152646502835537,Europe
 ronny-bossant,Ronny  Bossant,1954.0,,Belgium,95.07920792079207,101,,Europe
 bruno-boscardin,Bruno  Boscardin,1970.0,,Switzerland,88.45794392523365,214,,Europe
-xabier-isasa-larranaga,Xabier  Isasa,2001.0,185.0,Spain,68.13636363636364,22,21.563184806428048,Europe
+xabier-isasa-larranaga,Xabier  Isasa,2001.0,185.0,Spain,68.13636363636364,22,21.212563915266614,Europe
 jose-pesarrodona,José  Pesarrodona,1946.0,,Spain,68.02604166666667,192,,Europe
 hilton-clarke,Hilton  Clarke,1979.0,180.0,Australia,65.94299674267101,614,21.604938271604937,Oceania
 loic-lamouller,Loïc  Lamouller,1978.0,,France,69.92045454545455,176,,Europe
@@ -1457,7 +1457,7 @@ alessio-di-basco,Alessio Di Basco,1964.0,,Italy,80.03649635036497,411,,Europe
 julien-vermote,Julien  Vermote,1989.0,179.0,Belgium,55.84592145015106,331,23.095409007209515,Europe
 stephane-guay,Stéphane  Guay,1961.0,,France,124.88721804511279,133,,Europe
 nicolas-rousseau,Nicolas  Rousseau,1983.0,176.0,France,94.8132118451025,439,22.59814049586777,Europe
-ivan-quaranta,Ivan  Quaranta,1974.0,174.0,Italy,91.1231884057971,138,22.261857576958647,Europe
+ivan-quaranta,Ivan  Quaranta,1974.0,174.0,Italy,91.1231884057971,138,21.865504029594398,Europe
 jarlinson-pantano,Jarlinson  Pantano,1988.0,173.0,Colombia,114.0,9,20.381569714992146,South America
 marcel-meisen,Marcel  Meisen,1989.0,172.0,Germany,92.88235294117646,221,20.9572742022715,Europe
 kurt-huygens,Kurt  Huygens,1968.0,,Belgium,117.95970695970696,273,,Europe
@@ -1471,7 +1471,7 @@ stephane-petilleau,Stéphane  Petilleau,1971.0,,France,79.72865853658537,328,,Eu
 werner-wuller,Werner  Wuller,1961.0,,Germany,89.18498168498168,546,,Europe
 vincenzo-galati,Vincenzo  Galati,1969.0,,Italy,103.80459770114942,87,,Europe
 roberto-ferrari,Roberto  Ferrari,1983.0,173.0,Italy,94.10091743119266,218,24.3910588392529,Europe
-luis-ocana,Luis  Ocaña,1945.0,178.0,Spain,96.6141975308642,324,20.893826537053403,Europe
+luis-ocana,Luis  Ocaña,1945.0,178.0,Spain,96.6141975308642,324,20.45196313596768,Europe
 serge-parsani,Serge  Parsani,1952.0,,Italy,82.72911392405064,395,,Europe
 hermann-pernsteiner,Hermann  Pernsteiner,1990.0,168.0,Austria,107.73003802281369,263,19.48696145124717,Europe
 kevyn-ista,Kevyn  Ista,1984.0,183.0,Belgium,115.97348484848484,264,20.902385858042937,Europe
@@ -1641,7 +1641,7 @@ fabian-jeker,Fabian  Jeker,1968.0,177.0,Switzerland,76.09473684210526,95,22.9819
 jan-hruska,Jan  Hruška,1975.0,174.0,Czech Republic,156.0,1,20.478266613819528,Europe
 william-walker,William  Walker,1985.0,,Australia,72.69940476190476,336,,Oceania
 amael-moinard,Amaël  Moinard,1982.0,180.0,France,55.09345794392523,321,21.296296296296294,Europe
-nicolas-dalla-valle,Nicolas  Dalla Valle,1997.0,181.0,Italy,65.70673076923077,208,22.282592106468055,Europe
+nicolas-dalla-valle,Nicolas  Dalla Valle,1997.0,184.4,Italy,65.70673076923077,208,21.468466645649134,Europe
 brent-bookwalter,Brent  Bookwalter,1984.0,180.0,United States,71.66315789473684,285,21.604938271604937,North America
 pedro-merino-criado,Pedro  Merino,1987.0,170.0,Spain,84.0220588235294,136,19.031141868512112,Europe
 pierino-gavazzi,Pierino  Gavazzi,1950.0,169.0,Italy,92.02631578947368,304,23.458562375266975,Europe
@@ -1806,7 +1806,7 @@ emile-cambre,Emile  Cambré,1948.0,,Belgium,79.33210332103322,271,,Europe
 peter-van-brecht,Peter Van Brecht,1965.0,,Belgium,65.0398406374502,251,,Europe
 alberto-fernandez-de-la-puebla-ramos,Alberto  Fernández de la Puebla,1984.0,174.0,Spain,90.34924623115577,398,20.808561236623067,Europe
 javier-claramunt,Javier  Claramunt,1968.0,,Spain,71.66315789473684,285,,Europe
-alfons-de-bal,Alfons De Bal,1943.0,155.0,Belgium,52.54362416107382,447,21.97710718002081,Europe
+alfons-de-bal,Alfons De Bal,1943.0,155.0,Belgium,52.54362416107382,447,22.310093652445367,Europe
 timothy-roe,Timothy  Roe,1989.0,183.0,Australia,58.26341463414634,205,19.70796380901191,Oceania
 cristian-moreni,Cristian  Moreni,1972.0,175.0,Italy,43.93698175787728,603,21.224489795918366,Europe
 matthew-busche,Matthew  Busche,1985.0,174.0,United States,44.470483005366724,559,22.79032897344431,North America
@@ -1815,7 +1815,7 @@ daniel-atienza-urendez,Daniel  Atienza,1974.0,170.0,Spain,68.06666666666666,210,
 michael-giebelmann,Michael  Giebelmann,1974.0,,Germany,71.84853168469861,647,,Europe
 frans-van-looy,Frans Van Looy,1950.0,179.0,Belgium,63.854166666666664,672,23.40750912892856,Europe
 anton-luengo,Antton  Luengo,1981.0,,Spain,49.10215053763441,372,,Europe
-adam-de-vos,Adam de Vos,1993.0,187.0,Canada,68.5925925925926,405,22.191083531127564,North America
+adam-de-vos,Adam de Vos,1993.0,187.0,Canada,68.5925925925926,405,21.333180817295315,North America
 ludo-engelen,Ludo  Engelen,1957.0,,Belgium,86.7451923076923,208,,Europe
 xavier-aldanondo,Xavier  Aldanondo,1967.0,,Spain,71.70673076923077,416,,Europe
 jose-angel-vidal,José Angel  Vidal,1969.0,172.0,Spain,68.93154034229829,409,23.99945916711736,Europe
@@ -1859,7 +1859,7 @@ nicolas-portal,Nicolas  Portal,1979.0,184.0,France,76.3076923076923,52,20.675803
 jan-huisjes,Jan  Huisjes,1951.0,,Netherlands,79.56573705179282,251,,Europe
 fabio-bulgarelli,Fabio  Bulgarelli,1977.0,,Italy,90.77319587628865,97,,Europe
 jerome-chiotti,Jérôme  Chiotti,1972.0,,France,115.57142857142857,21,,Europe
-yanto-barker,Yanto  Barker,1980.0,182.0,Great Britain,94.12926391382406,557,21.615746890472163,Europe
+yanto-barker,Yanto  Barker,1980.0,182.0,Great Britain,94.12926391382406,557,20.589300809081028,Europe
 ferdi-van-den-haute,Ferdi Van Den Haute,1952.0,,Belgium,95.54545454545455,308,,Europe
 martijn-verschoor,Martijn  Verschoor,1985.0,179.0,Netherlands,107.9969512195122,328,23.251459068069035,Europe
 lauri-aus,Lauri  Aus,1970.0,179.0,Estonia,78.9950495049505,202,23.40750912892856,Europe
@@ -2178,7 +2178,7 @@ giovanni-renosto,Giovanni  Renosto,1960.0,,Italy,41.714285714285715,28,,Europe
 juan-carlos-alonso,Juan Carlos  Alonso,1958.0,,Spain,54.54716981132076,106,,Europe
 andreas-matzbacher,Andreas  Matzbacher,1982.0,,Austria,96.3943661971831,71,,Europe
 javier-francisco-elorriaga,Javier Francisco  Elorriaga,1947.0,179.0,Spain,73.48,25,26.528510346119035,Europe
-umberto-poli,Umberto  Poli,1996.0,167.0,Italy,49.44166666666667,240,22.015848542436085,Europe
+umberto-poli,Umberto  Poli,1996.0,167.0,Italy,49.44166666666667,240,22.446125712646563,Europe
 alejandro-marque,Alejandro Manuel  Marque,1981.0,182.0,Spain,55.459016393442624,61,20.528921627822726,Europe
 gregolry-panizo,Gregolry  Panizo,1985.0,183.0,Brazil,133.27272727272728,11,21.49959688255845,South America
 giovanni-carboni,Giovanni  Carboni,1995.0,180.0,Italy,50.76589595375722,346,18.827160493827158,Europe
@@ -2301,10 +2301,10 @@ bernard-draux,Bernard  Draux,1951.0,,Belgium,112.4,5,,Europe
 michel-ries,Michel  Ries,1998.0,184.0,Luxembourg,43.89396709323583,547,19.78969754253308,Europe
 claude-moreau,Claude  Moreau,1958.0,,France,30.875,320,,Europe
 ueli-sutter,Ueli  Sutter,1947.0,181.0,Switzerland,50.76589595375722,346,21.36686914318855,Europe
-dario-lillo,Dario  Lillo,2002.0,185.0,Switzerland,32.278177458033575,417,21.563184806428048,Europe
-miguel-heidemann,Miguel  Heidemann,1998.0,186.0,Germany,54.542635658914726,129,21.33194588969823,Europe
+dario-lillo,Dario  Lillo,2002.0,185.0,Switzerland,32.278177458033575,417,21.212563915266614,Europe
+miguel-heidemann,Miguel  Heidemann,1998.0,186.0,Germany,54.542635658914726,129,21.216325586773035,Europe
 caleb-ewan,Caleb  Ewan,1994.0,167.0,Australia,73.79411764705883,170,24.740937287102444,Oceania
-torstein-traeen,Torstein  Træen,1995.0,181.0,Norway,60.98028169014084,355,19.413326821525594,Europe
+torstein-traeen,Torstein  Træen,1995.0,181.0,Norway,60.98028169014084,355,20.695338970116907,Europe
 roland-smet,Roland  Smet,1952.0,,France,54.54716981132076,106,,Europe
 elmar-reinders,Elmar  Reinders,1992.0,190.0,Netherlands,70.64676616915423,201,21.634349030470915,Europe
 maurizio-rossi,Maurizio  Rossi,1962.0,,Italy,49.573208722741434,321,,Europe
@@ -2567,7 +2567,7 @@ luis-fernandez-oliveira,Luis  Fernández,1980.0,,Spain,108.31481481481481,54,,Eu
 thomas-danielson,Tom  Danielson,1978.0,177.0,United States,50.85054347826087,368,18.67279517380063,North America
 clement-alleno,Clément  Alleno,2000.0,180.0,France,24.28980891719745,942,21.296296296296294,Europe
 harm-vanhoucke,Harm  Vanhoucke,1997.0,181.0,Belgium,65.06666666666666,255,19.840664204389366,Europe
-bogdan-bondariew,Bogdan  Bondariew,1974.0,196.0,Ukraine,72.48571428571428,105,21.241149521032902,Europe
+bogdan-bondariew,Bogdan  Bondariew,1974.0,196.0,Ukraine,72.48571428571428,105,21.4493960849646,Europe
 pascal-ducrot,Pascal  Ducrot,1965.0,,Switzerland,41.99272197962154,687,,Europe
 jos-lammertink,Jos  Lammertink,1958.0,,Netherlands,89.85416666666667,96,,Europe
 mathieu-heijboer,Mathieu  Heijboer,1982.0,192.0,Netherlands,78.2159090909091,88,21.158854166666668,Europe
@@ -2617,7 +2617,7 @@ valentin-retailleau,Valentin  Retailleau,2000.0,181.0,France,67.37714285714286,1
 jose-joaquin-rojas,José Joaquín  Rojas,1985.0,177.0,Spain,59.205128205128204,39,22.34351559258195,Europe
 inaki-murua-gorostidi,Iñaki  Murua,1966.0,,Spain,59.7,10,,Europe
 danny-lippens,Danny  Lippens,1961.0,,Belgium,74.86153846153846,65,,Europe
-anders-halland-johannessen,Anders Halland  Johannessen,1999.0,176.0,Norway,86.83333333333333,6,22.210743801652892,Europe
+anders-halland-johannessen,Anders Halland  Johannessen,1999.0,176.0,Norway,86.83333333333333,6,21.5650826446281,Europe
 quintino-rodrigues,Quintino  Rodrigues,1971.0,,Portugal,95.38071065989848,197,,Europe
 cezary-zamana,Cezary  Zamana,1967.0,185.0,Poland,71.75,4,21.62162162162162,Europe
 dirk-durant,Dirk  Durant,1961.0,,Belgium,48.926829268292686,41,,Europe
@@ -2730,7 +2730,7 @@ pascal-elaut,Pascal  Elaut,1965.0,,Belgium,55.1578947368421,95,,Europe
 michel-pollentier,Michel  Pollentier,1951.0,167.0,Belgium,57.97435897435897,39,22.230987127541326,Europe
 pietro-zucconi,Pietro  Zucconi,1975.0,171.0,Switzerland,40.54022988505747,87,21.545090797168363,Europe
 jokin-ormaetxea,Jokin  Ormaetxea,1980.0,,Spain,57.92424242424242,66,,Europe
-christian-raymond,Christian  Raymond,1943.0,178.0,France,63.03846153846154,26,20.893826537053403,Europe
+christian-raymond,Christian  Raymond,1943.0,178.0,France,63.03846153846154,26,20.45196313596768,Europe
 christopher-williams,Christopher  Williams,1981.0,181.0,Australia,54.72857142857143,70,22.89307408198773,Oceania
 charlie-quarterman,Charlie  Quarterman,1998.0,180.0,Great Britain,45.379746835443036,79,23.148148148148145,Europe
 jens-jentner,Jens  Jentner,1968.0,,Switzerland,45.1021897810219,137,,Europe
@@ -2851,7 +2851,7 @@ arnaud-coyot,Arnaud  Coyot,1980.0,195.0,France,69.16326530612245,49,19.986850756
 wim-maessen,Wim  Maessen,1956.0,,Netherlands,58.84939759036145,332,,Europe
 patrick-schoovaerts,Patrick  Schoovaerts,1964.0,,Belgium,58.43016759776536,179,,Europe
 gregor-braun,Gregor  Braun,1955.0,,Germany,107.37948717948719,195,,Europe
-max-poole,Max  Poole,2003.0,185.0,Great Britain,75.20958083832335,167,21.563184806428048,Europe
+max-poole,Max  Poole,2003.0,185.0,Great Britain,75.20958083832335,167,21.212563915266614,Europe
 stefano-zanatta,Stefano  Zanatta,1964.0,,Italy,86.9390243902439,246,,Europe
 john-carlsen,John  Carlsen,1961.0,,Denmark,61.2317880794702,151,,Europe
 brian-van-goethem,Brian van Goethem,1991.0,186.0,Netherlands,97.98333333333333,60,22.25690831309978,Europe
@@ -2877,7 +2877,7 @@ dylan-groenewegen,Dylan  Groenewegen,1993.0,177.0,Netherlands,99.24413145539906,
 ludo-loos,Ludo  Loos,1955.0,,Belgium,125.77272727272727,22,,Europe
 vladimir-smirnov,Vladimir  Smirnov,1978.0,,Lithuania,71.12765957446808,188,,Europe
 regis-simon,Régis  Simon,1958.0,,France,85.12992125984252,254,,Europe
-andrzej-mierzejewski,Andrzej  Mierzejewski,1960.0,173.0,Poland,71.74199623352166,531,21.250292358581977,Europe
+andrzej-mierzejewski,Andrzej  Mierzejewski,1960.0,173.0,Poland,71.74199623352166,531,20.91616826489358,Europe
 david-boily,David  Boily,1990.0,180.0,Canada,119.63157894736842,38,18.51851851851852,North America
 luca-rota,Luca  Rota,1963.0,,Italy,100.72527472527473,182,,Europe
 gianluca-valoti,Gianluca  Valoti,1973.0,,Italy,86.0,207,,Europe
@@ -3057,12 +3057,12 @@ franco-pellizotti,Franco  Pellizotti,1978.0,175.0,Italy,94.1156462585034,147,20.
 daryl-impey,Daryl  Impey,1984.0,181.0,South Africa,105.36129032258064,155,21.97735111870822,Africa
 benjamin-day,Benjamin  Day,1978.0,178.0,Australia,101.67091836734694,392,21.461936624163616,Oceania
 goncalo-amorim,Gonçalo  Amorim,1972.0,177.0,Portugal,93.24193548387096,124,21.38593635289987,Europe
-venceslau-fernandes,Venceslau  Fernandes,1996.0,181.0,Portugal,98.5,30,19.413326821525594,Europe
+venceslau-fernandes,Venceslau  Fernandes,1996.0,181.0,Portugal,98.5,30,20.695338970116907,Europe
 nico-sijmens,Nico  Sijmens,1978.0,175.0,Belgium,88.51612903225806,31,22.53061224489796,Europe
-sandy-dujardin,Sandy  Dujardin,1997.0,178.0,France,95.27472527472527,91,20.893826537053403,Europe
+sandy-dujardin,Sandy  Dujardin,1997.0,178.0,France,95.27472527472527,91,20.45196313596768,Europe
 loic-vliegen,Loïc  Vliegen,1993.0,184.0,Belgium,122.15384615384616,52,20.6758034026465,Europe
 antonio-espejo,Antonio  Espejo,1968.0,,Spain,82.9041095890411,73,,Europe
-oliver-rees,Oliver  Rees,2001.0,184.0,Great Britain,94.53846153846153,39,22.03449905482041,Europe
+oliver-rees,Oliver  Rees,2001.0,184.0,Great Britain,94.53846153846153,39,21.561909262759922,Europe
 michele-bartoli,Michele  Bartoli,1970.0,179.0,Italy,97.775,40,20.286507911738084,Europe
 paul-lapeira,Paul  Lapeira,2000.0,176.0,France,11.36046511627907,86,20.66115702479339,Europe
 simone-petilli,Simone  Petilli,1993.0,178.0,Italy,41.4054054054054,37,20.515086478979924,Europe
@@ -3142,7 +3142,7 @@ yevgeniy-fedorov,Yevgeniy  Fedorov,2000.0,193.0,Kazakhstan,100.47368421052632,19
 gianluca-brambilla,Gianluca  Brambilla,1987.0,170.0,Italy,87.8,25,19.723183391003463,Europe
 stefan-de-bod,Stefan de Bod,1996.0,183.0,South Africa,45.10526315789474,19,19.70796380901191,Africa
 simon-guglielmi,Simon  Guglielmi,1997.0,180.0,France,56.80701754385965,57,20.37037037037037,Europe
-nils-brun,Nils  Brun,2000.0,176.4,Switzerland,57.142857142857146,14,20.567561869797046,Europe
+nils-brun,Nils  Brun,2000.0,172.2,Switzerland,57.142857142857146,14,21.58309288418917,Europe
 johan-dekkers,Johan  Dekkers,1978.0,,Belgium,104.9278350515464,97,,Europe
 edward-ravasi,Edward  Ravasi,1994.0,181.0,Italy,26.064102564102566,156,18.619700253350018,Europe
 pascal-kohlvelter,Pascal  Kohlvelter,1965.0,,Luxembourg,81.27363184079601,201,,Europe
@@ -3281,7 +3281,7 @@ bernard-vifian,Bernard  Vifian,1944.0,,Switzerland,107.37373737373737,99,,Europe
 emilio-garcia-perez,Emilio  Garcia,1959.0,,Spain,104.1588785046729,535,,Europe
 carlos-barredo,Carlos  Barredo,1981.0,177.0,Spain,88.45794392523365,214,19.4707778735357,Europe
 davide-dall-olio,Davide  Dall'Olio,1969.0,,Italy,95.07920792079207,101,,Europe
-charly-mottet,Charly  Mottet,1962.0,164.0,France,51.68589743589744,312,21.118381915526474,Europe
+charly-mottet,Charly  Mottet,1962.0,164.0,France,51.68589743589744,312,21.26710291493159,Europe
 oscar-gatto,Oscar  Gatto,1985.0,174.0,Italy,71.85365853658537,246,22.12973972783723,Europe
 ronny-van-holen,Ronny Van Holen,1959.0,,Belgium,84.06840390879479,307,,Europe
 valerio-lualdi,Valerio  Lualdi,1951.0,,Italy,71.76136363636364,88,,Europe
@@ -3387,7 +3387,7 @@ mauro-gianetti,Mauro  Gianetti,1964.0,175.0,Switzerland,89.18498168498168,546,20
 adam-toupalik,Adam  Ťoupalík,1996.0,175.0,Czech Republic,105.02686567164179,335,21.224489795918366,Europe
 giuseppe-calcaterra,Giuseppe  Calcaterra,1964.0,,Italy,84.12382445141066,638,,Europe
 philippe-leleu,Philippe  Leleu,1958.0,,France,88.04054054054055,74,,Europe
-johannes-staune-mittet,Johannes  Staune-Mittet,2002.0,182.0,Norway,68.93154034229829,409,21.615746890472163,Europe
+johannes-staune-mittet,Johannes  Staune-Mittet,2002.0,182.0,Norway,68.93154034229829,409,20.589300809081028,Europe
 federico-canuti,Federico  Canuti,1985.0,182.0,Italy,91.71428571428571,196,20.528921627822726,Europe
 kilian-frankiny,Kilian  Frankiny,1994.0,179.0,Switzerland,104.61538461538461,13,20.91070815517618,Europe
 giovanni-aleotti,Giovanni  Aleotti,1999.0,180.0,Italy,77.1010752688172,465,20.679012345679013,Europe
@@ -3446,7 +3446,7 @@ kenny-van-der-schueren,Kenny Van Der Schueren,1982.0,,Belgium,89.81046931407943,
 roger-rosiers,Roger  Rosiers,1946.0,178.0,Belgium,75.46478873239437,71,24.61810377477591,Europe
 david-tanner,David  Tanner,1984.0,184.0,Australia,98.10333333333334,600,20.6758034026465,Oceania
 sebastien-delfosse,Sébastien  Delfosse,1982.0,187.0,Belgium,82.88235294117646,51,20.875632703251448,Europe
-rob-britton,Rob  Britton,1984.0,188.0,Canada,94.85714285714286,7,21.05024898143957,North America
+rob-britton,Rob  Britton,1984.0,188.0,Canada,94.85714285714286,7,21.616115889542783,North America
 lluis-guillermo-mas,Lluís  Mas,1989.0,181.0,Spain,88.6604938271605,162,21.06162815542871,Europe
 martial-locatelli,Martial  Locatelli,1971.0,,France,93.2,20,,Europe
 fabio-casas,Fabio  Casas,1959.0,,Colombia,73.72321428571429,224,,South America
@@ -3601,7 +3601,7 @@ barnabas-peak,Barnabás  Peák,1998.0,183.0,Hungary,95.54545454545455,308,22.096
 brian-smith,Brian  Smith,1967.0,,Great Britain,51.48360655737705,610,,Europe
 marco-magnani,Marco  Magnani,1974.0,177.0,Italy,116.87128712871286,101,20.428357113217785,Europe
 fabien-sanchez,Fabien  Sanchez,1983.0,188.0,France,71.74199623352166,531,21.22000905387053,Europe
-jonas-iversby-hvideberg,Jonas Iversby  Hvideberg,1999.0,185.0,Norway,94.12926391382406,557,21.563184806428048,Europe
+jonas-iversby-hvideberg,Jonas Iversby  Hvideberg,1999.0,185.0,Norway,94.12926391382406,557,21.212563915266614,Europe
 sammie-moreels,Sammie  Moreels,1965.0,,Belgium,96.08786610878661,239,,Europe
 manrico-ronchiato,Manrico  Ronchiato,1960.0,,Italy,44.470483005366724,559,,Europe
 milan-kadlec,Milan  Kadlec,1974.0,179.0,Czech Republic,94.25581395348837,129,21.847008520333322,Europe
@@ -3670,7 +3670,7 @@ paul-ourselin,Paul  Ourselin,1994.0,185.0,France,98.26666666666667,60,20.4528853
 jensen-plowright,Jensen  Plowright,2000.0,177.0,Australia,64.45161290322581,341,24.897060231734173,Oceania
 julen-amezqueta,Julen  Amezqueta,1993.0,174.0,Spain,81.02173913043478,46,20.808561236623067,Europe
 romero-jesus-buendia,Jesús  Buendía,1982.0,,Spain,93.30739299610894,257,,Europe
-sergey-kolesnikov,Sergey  Kolesnikov,1986.0,179.0,Russia,72.14102564102564,78,21.410068349926654,Europe
+sergey-kolesnikov,Sergey  Kolesnikov,1986.0,179.0,Russia,72.14102564102564,78,21.847008520333322,Europe
 claudio-cucinotta,Claudio  Cucinotta,1982.0,177.0,Italy,50.18709677419355,310,22.66270867247598,Europe
 paolo-tiralongo,Paolo  Tiralongo,1977.0,178.0,Italy,70.52941176470588,17,19.883853048857468,Europe
 rafaa-chtioui,Rafaâ  Chtioui,1986.0,190.0,Tunisia,69.35,380,22.714681440443215,Africa
@@ -3690,13 +3690,13 @@ luca-belluomini,Luca  Belluomini,1976.0,,Italy,72.1994884910486,391,,Europe
 patrick-verplancke,Patrick  Verplancke,1962.0,,Belgium,68.24657534246575,292,,Europe
 pierre-herinne,Pierre  Herinne,1968.0,,Belgium,81.3103448275862,232,,Europe
 ondrej-fadrny,Ondřej  Fadrný,1978.0,,Czech Republic,84.8695652173913,23,,Europe
-sebastian-kolze-changizi,Sebastian  Kolze Changizi,2000.0,181.0,Denmark,82.5,6,19.413326821525594,Europe
+sebastian-kolze-changizi,Sebastian  Kolze Changizi,2000.0,181.0,Denmark,82.5,6,20.695338970116907,Europe
 jesper-asselman,Jesper  Asselman,1990.0,184.0,Netherlands,60.912921348314605,356,20.380434782608695,Europe
 joseph-bruyere,Joseph  Bruyère,1948.0,,Belgium,104.13065326633166,199,,Europe
 dario-montani,Dario  Montani,1961.0,,Italy,79.04232804232804,189,,Europe
 vladimir-miholjevic,Vladimir  Miholjević,1974.0,180.0,Croatia,94.32183908045977,87,20.98765432098765,Europe
 michele-paletti,Michele  Paletti,1967.0,,Italy,95.07407407407408,135,,Europe
-vadim-kravchenko,Vadim  Kravchenko,1969.0,178.0,Kazakhstan,99.09836065573771,61,20.893826537053403,Asia
+vadim-kravchenko,Vadim  Kravchenko,1969.0,178.0,Kazakhstan,99.09836065573771,61,20.45196313596768,Asia
 riccardo-faverio,Riccardo  Faverio,1969.0,,Italy,85.19634703196347,219,,Europe
 javier-moreno,Javier  Moreno,1984.0,181.0,Spain,74.27570093457943,428,19.230182228869694,Europe
 nuno-ribeiro,Nuno  Ribeiro,1977.0,170.0,Portugal,88.07418397626112,337,20.41522491349481,Europe
@@ -3745,7 +3745,7 @@ jasha-sutterlin,Jasha  Sütterlin,1992.0,184.0,Germany,96.13333333333334,75,23.0
 jesus-gabriel-arguintxona-abarrategui,Jesús Gabriel  Arguintxona,1962.0,,Spain,93.56428571428572,140,,Europe
 alessandro-monaco,Alessandro  Monaco,1998.0,,Italy,74.16666666666667,6,,Europe
 silvano-contini,Silvano  Contini,1958.0,,Italy,100.52777777777777,432,,Europe
-libardo-nino-corredor,Libardo  Niño,1968.0,182.0,Colombia,49.27807486631016,187,21.615746890472163,South America
+libardo-nino-corredor,Libardo  Niño,1968.0,182.0,Colombia,49.27807486631016,187,20.589300809081028,South America
 oscar-sevilla,Óscar  Sevilla,1976.0,175.0,Spain,83.12962962962963,54,20.244897959183675,Europe
 miguel-angel-benito,Miguel Ángel  Benito,1993.0,181.0,Spain,66.52664576802508,319,20.45114617990904,Europe
 neil-stephens,Neil  Stephens,1963.0,171.0,Australia,100.10328638497653,213,22.229061933586404,Oceania
@@ -3895,7 +3895,7 @@ rudi-dexters,Rudi  Dexters,1959.0,,Belgium,80.76,75,,Europe
 ruben-gorospe,Ruben  Gorospe,1964.0,,Spain,131.92857142857142,28,,Europe
 victor-langellotti,Victor  Langellotti,1995.0,177.0,Monaco,87.67714285714285,350,20.428357113217785,Europe
 robert-gesink,Robert  Gesink,1986.0,190.0,Netherlands,79.93462109955424,673,19.390581717451525,Europe
-joan-bou,Joan  Bou,1997.0,182.0,Spain,67.83737517831669,701,21.615746890472163,Europe
+joan-bou,Joan  Bou,1997.0,182.0,Spain,67.83737517831669,701,20.589300809081028,Europe
 rudy-patry,Rudy  Patry,1961.0,,Belgium,44.54183266932271,753,,Europe
 aitor-osa,Aitor  Osa,1973.0,176.0,Spain,44.84346504559271,658,20.66115702479339,Europe
 willy-lienhard,Willy  Lienhard,1954.0,,Switzerland,58.8018691588785,535,,Europe
@@ -3966,9 +3966,9 @@ lance-armstrong,Lance  Armstrong,1971.0,178.0,United States,83.6580459770115,348
 stefano-giraldi,Stefano  Giraldi,1968.0,,Italy,89.81046931407943,554,,Europe
 gianfranco-foresti,Gianfranco  Foresti,1950.0,,Italy,73.72932330827068,266,,Europe
 frank-francken,Frank  Francken,1964.0,,Belgium,118.45238095238095,84,,Europe
-wladimiro-panizza,Wladimiro  Panizza,1945.0,157.0,Italy,66.4756446991404,349,21.42074729197939,Europe
+wladimiro-panizza,Wladimiro  Panizza,1945.0,157.0,Italy,66.4756446991404,349,21.745304069130594,Europe
 pius-schwarzentruber,Pius  Schwarzentruber,1965.0,,Switzerland,118.82191780821918,73,,Europe
-enekoitz-azparren-irurzun,Enekoitz  Azparren,2002.0,180.0,Spain,89.7265625,256,22.34567901234568,Europe
+enekoitz-azparren-irurzun,Enekoitz  Azparren,2002.0,180.0,Spain,89.7265625,256,21.54320987654321,Europe
 marc-steels,Marc  Steels,1953.0,,Belgium,85.15172413793104,290,,Europe
 ruben-oarbeaskoa-ispizua,Rubén  Oarbeaskoa,1975.0,,Spain,99.77310924369748,119,,Europe
 herculano-ferreira-de-oliveira,Herculano  Ferreira de Oliveira,1946.0,,Portugal,93.57839721254355,287,,Europe
@@ -4004,7 +4004,7 @@ herve-vermeeren,Hervé  Vermeeren,1947.0,,Belgium,88.62745098039215,102,,Europe
 franky-pattyn,Franky  Pattyn,1963.0,,Belgium,51.48360655737705,610,,Europe
 pieter-weening,Pieter  Weening,1981.0,186.0,Netherlands,31.34423076923077,520,19.65545149728292,Europe
 jan-kuyckx,Jan  Kuyckx,1979.0,177.0,Belgium,73.98251748251748,286,21.705129432793896,Europe
-lukas-nerurkar,Lukas  Nerurkar,2003.0,177.0,Great Britain,96.6875,192,20.49219572919659,Europe
+lukas-nerurkar,Lukas  Nerurkar,2003.0,177.0,Great Britain,96.6875,192,20.93906604104823,Europe
 fernando-orjuela,Fernando  Orjuela,1991.0,168.0,Colombia,102.31351351351351,370,21.258503401360546,South America
 corey-sweet,Corey  Sweet,1976.0,,Australia,89.14285714285714,161,,Oceania
 markel-irizar,Markel  Irizar,1980.0,182.0,Spain,71.59392789373814,527,22.03840115928028,Europe
@@ -4043,7 +4043,7 @@ andrew-vollmer,Andrew  Vollmer,2000.0,183.0,United States,93.27272727272727,66,1
 david-plaza-romero,David  Plaza,1970.0,179.0,Spain,114.18407960199005,201,21.22280827689523,Europe
 urko-berrade-fernandez,Urko  Berrade,1997.0,184.0,Spain,89.79425837320574,418,21.266540642722116,Europe
 manuel-lloret-zaragoza,Manuel  Lloret,1981.0,,Spain,85.92139737991266,229,,Europe
-emilien-jeanniere,Emilien  Jeannière,1998.0,176.0,France,96.02534562211981,434,22.210743801652892,Europe
+emilien-jeanniere,Emilien  Jeannière,1998.0,176.0,France,96.02534562211981,434,21.5650826446281,Europe
 francesco-chicchi,Francesco  Chicchi,1980.0,176.0,Italy,98.66355140186916,535,24.535123966942148,Europe
 marco-minnaard,Marco  Minnaard,1989.0,178.0,Netherlands,74.96363636363637,55,20.515086478979924,Europe
 heriberto-uran,Heriberto  Uran,1954.0,,Colombia,110.46551724137932,58,,South America
@@ -4229,7 +4229,7 @@ olivier-perraudeau,Olivier  Perraudeau,1972.0,,France,101.48387096774194,186,,Eu
 alexis-guerin,Alexis  Guerin,1992.0,176.0,France,84.93061224489796,245,20.66115702479339,Europe
 jurgen-van-den-broeck,Jurgen Van den Broeck,1983.0,185.0,Belgium,105.36129032258064,155,20.16070124178232,Europe
 bekim-leif-christensen,Bekim leif  Christensen,1973.0,178.0,Denmark,116.97222222222223,108,20.830703194041156,Europe
-william-blume-levy,William  Blume Levy,2001.0,192.0,Denmark,133.8148148148148,27,20.996093750000004,Europe
+william-blume-levy,William  Blume Levy,2001.0,192.0,Denmark,133.8148148148148,27,20.399305555555557,Europe
 osvaldo-bettoni,Osvaldo  Bettoni,1952.0,,Italy,83.58655462184873,595,,Europe
 kim-kirchen,Kim  Kirchen,1978.0,178.0,Luxembourg,87.85276073619632,163,21.461936624163616,Europe
 corrado-donadio,Corrado  Donadio,1958.0,,Italy,104.98651685393259,445,,Europe
@@ -4371,7 +4371,7 @@ valter-bonca,Valter  Bonča,1968.0,172.0,Slovenia,99.64044943820225,89,21.295294
 fumiyuki-beppu,Fumiyuki  Beppu,1983.0,180.0,Japan,114.97237569060773,181,21.296296296296294,Asia
 juan-pablo-valencia,Juan Pablo  Valencia,1988.0,178.0,Colombia,94.80049875311721,401,22.408786769347305,South America
 mathieu-halleguen,Mathieu  Halleguen,1988.0,181.0,France,88.3019801980198,202,20.45114617990904,Europe
-bart-lemmen,Bart  Lemmen,1995.0,180.0,Netherlands,113.14814814814815,27,22.34567901234568,Europe
+bart-lemmen,Bart  Lemmen,1995.0,180.0,Netherlands,113.14814814814815,27,21.54320987654321,Europe
 martijn-budding,Martijn  Budding,1995.0,187.0,Netherlands,96.6141975308642,324,21.161600274528865,Europe
 cedric-rossier,Cédric  Rossier,1957.0,,Switzerland,109.96442687747036,253,,Europe
 alex-turrin,Alex  Turrin,1992.0,,Italy,83.81453634085213,399,,Europe
@@ -4431,7 +4431,7 @@ lenny-martinez,Lenny  Martinez,2003.0,168.0,France,29.119266055045873,327,18.424
 jaak-de-boever,Jaak De Boever,1937.0,,Belgium,51.096,500,,Europe
 roman-kireyev,Roman  Kireyev,1987.0,177.0,Kazakhstan,31.221556886227546,334,21.06674327300584,Asia
 boris-shpilevsky,Boris  Shpilevsky,1982.0,183.0,Russia,46.85141509433962,424,23.291229956104985,Europe
-vladislav-kulikov,Vladislav  Kulikov,1996.0,190.0,Russia,41.80365296803653,438,20.66481994459834,Europe
+vladislav-kulikov,Vladislav  Kulikov,1996.0,190.0,Russia,41.80365296803653,438,21.218836565096954,Europe
 eugene-plet,Eugène  Plet,1952.0,,France,51.650205761316876,243,,Europe
 tim-van-dijke,Tim van Dijke,2000.0,189.0,Netherlands,65.48249027237354,257,20.71610537219003,Europe
 jean-francois-pescheux,Jean-François  Pescheux,1952.0,,France,37.86807387862797,379,,Europe
@@ -4545,7 +4545,7 @@ jose-roberto-sierra-aguerro,José Roberto  Sierra,1967.0,,Spain,70.0653753026634
 stephen-cummings,Steve  Cummings,1981.0,190.0,Great Britain,64.07246376811594,276,20.221606648199447,Europe
 fabio-van-den-bossche,Fabio Van den Bossche,2000.0,176.0,Belgium,64.45161290322581,341,20.33832644628099,Europe
 thierry-de-groote,Thierry De Groote,1975.0,180.0,Belgium,49.033557046979865,298,21.91358024691358,Europe
-nickolas-zukowsky,Nickolas  Zukowsky,1998.0,188.0,Canada,80.54724409448819,254,21.05024898143957,North America
+nickolas-zukowsky,Nickolas  Zukowsky,1998.0,188.0,Canada,80.54724409448819,254,21.616115889542783,North America
 luca-gelfi,Luca  Gelfi,1966.0,,Italy,65.46428571428571,84,,Europe
 rene-haselbacher,René  Haselbacher,1977.0,181.0,Austria,43.93698175787728,603,21.06162815542871,Europe
 guillaume-le-floch,Guillaume Le Floch,1985.0,180.0,France,94.5,74,20.679012345679013,Europe
@@ -4561,7 +4561,7 @@ xabier-usabiaga,Xabier  Usabiaga,1969.0,,Spain,86.70253164556962,158,,Europe
 roy-curvers,Roy  Curvers,1979.0,188.0,Netherlands,70.92753623188406,138,20.654142145767317,Europe
 robert-matwew,Robert  Matwew,1967.0,,Germany,83.9578947368421,95,,Europe
 jan-poppe,Jan  Poppe,1970.0,,Belgium,75.75,120,,Europe
-rik-van-ijzendoorn,Rik van IJzendoorn,1987.0,176.0,Netherlands,94.17021276595744,235,22.210743801652892,Europe
+rik-van-ijzendoorn,Rik van IJzendoorn,1987.0,176.0,Netherlands,94.17021276595744,235,21.5650826446281,Europe
 sasa-gajicic,Saša  Gajičić,1977.0,,Serbia,83.78776978417267,278,,Europe
 gage-hecht,Gage  Hecht,1998.0,180.0,United States,49.573208722741434,321,22.22222222222222,North America
 jose-serste,José  Sersté,1943.0,,Belgium,86.9390243902439,246,,Europe
@@ -4622,7 +4622,7 @@ dylan-van-baarle,Dylan van Baarle,1992.0,189.0,Netherlands,29.126903553299492,39
 johannes-draaijer,Johannes  Draaijer,1963.0,,Netherlands,26.225978647686834,562,,Europe
 cipriano-chemello,Cipriano  Chemello,1945.0,,Italy,48.829508196721314,305,,Europe
 jose-luis-diaz,Jose Luis  Diaz,1965.0,,Spain,77.28593996840442,633,,Europe
-jose-de-cauwer,José De Cauwer,1949.0,173.0,Belgium,62.177700348432055,287,21.250292358581977,Europe
+jose-de-cauwer,José De Cauwer,1949.0,173.0,Belgium,62.177700348432055,287,20.91616826489358,Europe
 nazzareno-berto,Nazzareno  Berto,1957.0,,Italy,56.91189427312775,227,,Europe
 jerome-pineau,Jérôme  Pineau,1980.0,176.0,France,68.5925925925926,405,20.983987603305785,Europe
 igor-boev,Igor  Boev,1989.0,186.0,Russia,94.25581395348837,129,21.389756041160826,Europe
@@ -4674,14 +4674,14 @@ tomasz-kiendys,Tomasz  Kiendyś,1977.0,185.0,Poland,63.414538310412574,509,22.79
 patrick-versluys,Patrick  Versluys,1958.0,,Belgium,85.1,210,,Europe
 henri-abadie,Henri  Abadie,1963.0,,France,60.765957446808514,235,,Europe
 dominique-cornu,Dominique  Cornu,1985.0,197.0,Belgium,83.13541666666667,96,20.098430776366307,Europe
-mathieu-hermans,Mathieu  Hermans,1963.0,172.0,Netherlands,48.03663003663004,273,21.160086533261225,Europe
+mathieu-hermans,Mathieu  Hermans,1963.0,172.0,Netherlands,48.03663003663004,273,21.22769064359113,Europe
 matteo-montaguti,Matteo  Montaguti,1984.0,181.0,Italy,42.17433414043583,413,19.840664204389366,Europe
 jimmy-janssens,Jimmy  Janssens,1989.0,183.0,Belgium,74.02262443438914,221,22.096807907073963,Europe
 bert-hiemstra,Bert  Hiemstra,1973.0,,Netherlands,87.8733850129199,387,,Europe
 joeri-calleeuw,Joeri  Calleeuw,1985.0,183.0,Belgium,72.72894736842105,380,21.20099137030069,Europe
 marc-goos,Marc  Goos,1990.0,178.0,Netherlands,57.68146214099217,383,20.515086478979924,Europe
 leon-heinschke,Leon  Heinschke,1999.0,180.0,Germany,86.6896551724138,203,21.604938271604937,Europe
-stephen-bassett,Stephen  Bassett,1995.0,191.0,United States,71.28846153846153,104,21.27134672843398,North America
+stephen-bassett,Stephen  Bassett,1995.0,191.0,United States,71.28846153846153,104,21.490638962747735,North America
 luciano-rossignoli,Luciano  Rossignoli,1951.0,,Italy,56.57971014492754,276,,Europe
 jean-francois-anti,Jean-francois  Anti,1971.0,,France,64.45161290322581,341,,Europe
 pierre-luc-perichon,Pierre-Luc  Périchon,1987.0,182.0,France,65.27124183006536,306,20.830817534114235,Europe
@@ -4734,14 +4734,14 @@ michel-balbuena,Michel  Balbuena,1954.0,,France,83.78776978417267,278,,Europe
 luca-ascani,Luca  Ascani,1983.0,187.0,Italy,95.08237986270022,437,21.447567845806283,Europe
 roberto-heras,Roberto  Heras,1974.0,172.0,Spain,86.82178217821782,202,19.94321254732288,Europe
 patrick-hendrikx,Patrick  Hendrikx,1964.0,,Belgium,82.28413284132841,271,,Europe
-nigel-ellsay,Nigel  Ellsay,1994.0,183.0,Canada,79.82943143812709,598,21.977365702170857,North America
+nigel-ellsay,Nigel  Ellsay,1994.0,183.0,Canada,79.82943143812709,598,21.021828062946042,North America
 willy-teirlinck,Willy  Teirlinck,1948.0,,Belgium,74.61572052401746,229,,Europe
 arman-kamyshev,Arman  Kamyshev,1991.0,182.0,Kazakhstan,88.07418397626112,337,20.227025721531216,Asia
 michele-coppolillo,Michele  Coppolillo,1967.0,,Italy,86.9390243902439,246,,Europe
 tom-dumoulin,Tom  Dumoulin,1990.0,185.0,Netherlands,95.85401459854015,137,20.16070124178232,Europe
 armando-lora,Armando  Lora,1951.0,,Italy,83.21100917431193,218,,Europe
 harry-tanfield,Harry  Tanfield,1994.0,190.0,Great Britain,103.05454545454545,110,22.022160664819946,Europe
-jan-sommer,Jan  Sommer,2000.0,185.0,Switzerland,87.41204819277108,415,21.563184806428048,Europe
+jan-sommer,Jan  Sommer,2000.0,185.0,Switzerland,87.41204819277108,415,21.212563915266614,Europe
 angel-edo,Ángel  Edo,1970.0,172.0,Spain,103.76543209876543,162,21.63331530557058,Europe
 gregor-gazvoda,Gregor  Gazvoda,1981.0,187.0,Slovenia,96.79411764705883,136,20.58966513197403,Europe
 johnny-van-cadsand,Johnny Van Cadsand,1972.0,,Netherlands,21.28095238095238,210,,Europe
@@ -4846,7 +4846,7 @@ john-gadret,John  Gadret,1979.0,170.0,France,66.79503105590062,161,20.0692041522
 patrick-jacobs,Patrick  Jacobs,1962.0,,Belgium,68.00970873786407,103,,Europe
 julio-alberto-rubiano,Julio Alberto  Rubiano,1953.0,,Colombia,65.85714285714286,196,,South America
 jesus-suarez-cueva,Jesús  Suárez,1955.0,,Spain,89.72641509433963,106,,Europe
-romain-gioux,Romain  Gioux,1986.0,160.0,France,56.6551724137931,58,21.015624999999996,Europe
+romain-gioux,Romain  Gioux,1986.0,160.0,France,56.6551724137931,58,21.953124999999996,Europe
 ken-hashikawa,Ken  Hashikawa,1970.0,,Japan,67.48529411764706,136,,Asia
 barry-markus,Barry  Markus,1991.0,179.0,Netherlands,48.53488372093023,215,23.40750912892856,Europe
 rolf-jaermann,Rolf  Järmann,1966.0,182.0,Switzerland,51.90625,64,22.03840115928028,Europe
@@ -4946,7 +4946,7 @@ bernard-van-der-linde,Bernard Van Der Linde,1946.0,,France,85.0,261,,Europe
 nathan-o-neill,Nathan  O'Neill,1974.0,177.0,Australia,58.803030303030305,330,22.981901752370007,Oceania
 gianluca-bortolami,Gianluca  Bortolami,1968.0,181.0,Italy,49.464530892448515,437,22.282592106468055,Europe
 pedro-luis-garcia-velasco,Pedro Luis  Garcia,1966.0,,Spain,69.46969696969697,396,,Europe
-luca-rastelli,Luca  Rastelli,1999.0,175.0,Italy,87.21348314606742,178,20.440816326530612,Europe
+luca-rastelli,Luca  Rastelli,1999.0,175.0,Italy,87.21348314606742,178,21.355102040816327,Europe
 damien-gaudin,Damien  Gaudin,1986.0,190.0,France,97.83823529411765,68,23.545706371191137,Europe
 jean-marc-bideau,Jean-Marc  Bideau,1984.0,192.0,France,57.65631929046563,451,19.80251736111111,Europe
 luc-leblanc,Luc  Leblanc,1966.0,,France,50.6796875,128,,Europe
@@ -5065,7 +5065,7 @@ pascal-chanteur,Pascal  Chanteur,1968.0,172.0,France,95.69642857142857,112,20.95
 marc-fournier,Marc  Fournier,1994.0,183.0,France,82.12841530054645,366,21.20099137030069,Europe
 salvador-jarque,Salvador  Jarque,1957.0,,Spain,79.51677852348993,298,,Europe
 remmert-wielinga,Remmert  Wielinga,1978.0,181.0,Netherlands,100.64516129032258,31,20.756387167668876,Europe
-gian-friesecke,Gian  Friesecke,1994.0,190.0,Switzerland,93.25925925925925,27,20.66481994459834,Europe
+gian-friesecke,Gian  Friesecke,1994.0,190.0,Switzerland,93.25925925925925,27,21.218836565096954,Europe
 ryder-hesjedal,Ryder  Hesjedal,1980.0,187.0,Canada,61.2317880794702,151,20.875632703251448,North America
 simone-stortoni,Simone  Stortoni,1985.0,169.0,Italy,109.76,25,20.65754000210077,Europe
 alain-dithurbide,Alain  Dithurbide,1959.0,,France,70.1598272138229,463,,Europe
@@ -5091,7 +5091,7 @@ laurens-de-plus,Laurens De Plus,1995.0,190.0,Belgium,88.87735849056604,106,18.55
 mario-anni,Mario  Anni,1943.0,,Italy,116.27027027027027,222,,Europe
 rasmus-tiller,Rasmus  Tiller,1996.0,187.0,Norway,79.7051282051282,78,24.021275987303035,Europe
 wim-myngheer,Wim  Myngheer,1955.0,,Belgium,105.6,15,,Europe
-lucien-aimar,Lucien  Aimar,1941.0,170.0,France,72.94557823129252,147,21.453287197231838,Europe
+lucien-aimar,Lucien  Aimar,1941.0,170.0,France,72.94557823129252,147,21.176470588235297,Europe
 nicolaj-bo-larsen,Nicolaj Bo  Larsen,1971.0,,Denmark,156.2,5,,Europe
 jose-cayetano-julia,José Cayetano  Juliá,1979.0,,Spain,62.06970509383378,373,,Europe
 nathan-vandepitte,Nathan  Vandepitte,2000.0,192.0,France,75.69767441860465,215,21.70138888888889,Europe
@@ -5154,7 +5154,7 @@ phil-anderson,Phil  Anderson,1958.0,,Australia,44.18181818181818,154,,Oceania
 bernt-johansson,Bernt  Johansson,1953.0,176.0,Sweden,49.53757225433526,346,22.920971074380166,Europe
 slawomir-kohut,Sławomir  Kohut,1977.0,176.0,Poland,37.701492537313435,134,20.983987603305785,Europe
 antonio-londono,Antonio  Londoño,1955.0,,Colombia,37.63855421686747,83,,South America
-alan-jousseaume,Alan  Jousseaume,1998.0,177.0,France,54.411764705882355,102,20.49219572919659,Europe
+alan-jousseaume,Alan  Jousseaume,1998.0,177.0,France,54.411764705882355,102,20.93906604104823,Europe
 benoit-cosnefroy,Benoît  Cosnefroy,1995.0,180.0,France,50.31958762886598,97,20.061728395061728,Europe
 steffen-radochla,Steffen  Radochla,1978.0,173.0,Germany,52.426791277258566,321,23.38868655818771,Europe
 eric-serlet,Eric  Serlet,1950.0,,Belgium,70.5589519650655,229,,Europe
@@ -5261,7 +5261,7 @@ humberto-parra,Humberto  Parra,1964.0,,Colombia,54.737127371273715,369,,South Am
 jean-marc-manfrin,Jean-Marc  Manfrin,1963.0,,France,49.48022598870057,531,,Europe
 rolando-ovando,Rolando  Ovando,1963.0,168.0,Guatemala,42.7359413202934,409,23.384353741496604,North America
 jesus-ignacio-ibanez,Jesus Ignacio  Ibañez,1960.0,,Spain,59.21787709497207,179,,Europe
-filippo-savini,Filippo  Savini,1985.0,178.0,Italy,66.25475285171103,526,20.893826537053403,Europe
+filippo-savini,Filippo  Savini,1985.0,178.0,Italy,66.25475285171103,526,20.45196313596768,Europe
 georgi-petrov-georgiev,Georgi  Petrov Georgiev,1985.0,,Bulgaria,61.017361111111114,288,,Europe
 roberto-ceruti,Roberto  Ceruti,1953.0,,Italy,57.478193146417446,642,,Europe
 karel-vereecke,Karel  Vereecke,1976.0,,Belgium,70.85040650406503,615,,Europe
@@ -5409,7 +5409,7 @@ nate-reiss,Nate  Reiss,1963.0,,United States,105.29735682819383,454,,North Ameri
 daniele-ratto,Daniele  Ratto,1989.0,180.0,Italy,69.74454828660436,321,22.839506172839506,Europe
 ethan-vernon,Ethan  Vernon,2000.0,188.0,Great Britain,115.97348484848484,264,20.937075599818925,Europe
 jose-azevedo-goncalves,José Silva Gonçalves  Azevedo,1940.0,,Portugal,89.16887417218543,302,,Europe
-colin-joyce,Colin  Joyce,1994.0,178.0,United States,83.74789915966386,119,20.893826537053403,North America
+colin-joyce,Colin  Joyce,1994.0,178.0,United States,83.74789915966386,119,20.45196313596768,North America
 alessandro-romio,Alessandro  Romio,1974.0,,Italy,137.84466019417476,103,,Europe
 luciano-boffo,Luciano  Boffo,1962.0,,Italy,139.28,75,,Europe
 hugues-grondin,Hugues  Grondin,1959.0,,France,152.0,41,,Europe
@@ -5454,7 +5454,7 @@ miguel-armando-ubeto,Miguel Armando  Ubeto,1976.0,168.0,Venezuela,61.01736111111
 valerio-conti,Valerio  Conti,1993.0,172.0,Italy,54.737127371273715,369,20.61925365062196,Europe
 mirko-puglioli,Mirko  Puglioli,1973.0,,Italy,47.06278713629403,653,,Europe
 soren-waerenskjold,Søren  Wærenskjold,2000.0,195.0,Norway,42.07538802660754,451,24.194608809993426,Europe
-anders-skaarseth,Anders  Skaarseth,1995.0,186.0,Norway,48.689008042895445,746,21.33194588969823,Europe
+anders-skaarseth,Anders  Skaarseth,1995.0,186.0,Norway,48.689008042895445,746,21.216325586773035,Europe
 adrien-boichis,Adrien  Boichis,2003.0,,France,50.19267515923567,628,,Europe
 zenon-jaskula,Zenon  Jaskuła,1962.0,183.0,Poland,54.82692307692308,468,22.694018931589476,Europe
 david-per,David  Per,1995.0,192.0,Slovenia,64.31566820276498,434,21.97265625,Europe
@@ -5538,7 +5538,7 @@ jacek-bodyk,Jacek  Bodyk,1966.0,,Poland,114.0,9,,Europe
 jeremy-lecroq,Jérémy  Lecroq,1995.0,189.0,France,71.42307692307692,234,19.59631589261219,Europe
 tomaz-nose,Tomaž  Nose,1982.0,,Slovenia,80.44258373205741,418,,Europe
 jose-patrocinio-jimenez,José Patrocinio  Jiménez,1953.0,,Colombia,105.07462686567165,67,,South America
-walter-calzoni,Walter  Calzoni,2001.0,172.0,Italy,106.4103448275862,290,21.160086533261225,Europe
+walter-calzoni,Walter  Calzoni,2001.0,172.0,Italy,106.4103448275862,290,21.22769064359113,Europe
 gaizka-lasa-larraya,Gaizka  Lasa,1982.0,,Spain,98.66355140186916,535,,Europe
 magno-prado,Magno  Nazaret,1986.0,172.0,Brazil,97.84918032786885,305,21.971335857220122,South America
 alessandro-tonelli,Alessandro  Tonelli,1992.0,176.0,Italy,101.87234042553192,47,20.66115702479339,Europe
@@ -5550,7 +5550,7 @@ junichi-kikuta,Junichi  Kikuta,1966.0,,Japan,103.432,125,,Asia
 francisco-codony,Francisco  Codony,1955.0,,Spain,64.5,20,,Europe
 oleg-chuzhda,Oleg  Chuzhda,1985.0,,Ukraine,88.44444444444444,72,,Europe
 diego-rubio,Diego  Rubio,1991.0,191.0,Spain,87.67796610169492,177,22.20333872426743,Europe
-marek-lesniewski,Marek  Lesniewski,1963.0,185.0,Poland,50.44976076555024,627,21.563184806428048,Europe
+marek-lesniewski,Marek  Lesniewski,1963.0,185.0,Poland,50.44976076555024,627,21.212563915266614,Europe
 bernard-croyet,Bernard  Croyet,1948.0,,France,99.1,130,,Europe
 nick-gates,Nick  Gates,1972.0,183.0,Australia,91.41776937618147,529,21.20099137030069,Oceania
 robert-wagner,Robert  Wagner,1983.0,186.0,Germany,93.57839721254355,287,21.678806798473808,Europe
@@ -5615,7 +5615,7 @@ daniel-girard,Daniel  Girard,1956.0,,Switzerland,80.54263565891473,129,,Europe
 paul-martens,Paul  Martens,1983.0,178.0,Germany,70.01860465116279,645,21.777553339224845,Europe
 giuseppe-milioli,Giuseppe  Milioli,1945.0,,Italy,61.98015873015873,504,,Europe
 michael-carbel,Michael  Carbel,1995.0,180.0,Denmark,67.83737517831669,701,22.530864197530864,Europe
-yannis-voisard,Yannis  Voisard,1998.0,171.0,Switzerland,50.958133971291865,836,19.15119181970521,Europe
+yannis-voisard,Yannis  Voisard,1998.0,171.8,Switzerland,50.958133971291865,836,18.973249074037682,Europe
 paidi-o-brien,Paídi  O'Brien,1984.0,,Ireland,69.85218702865761,663,,Europe
 juan-carlos-arribas,Juan Carlos  Arribas,1966.0,,Spain,67.62271805273834,493,,Europe
 enrico-poitschke,Enrico  Poitschke,1969.0,179.0,Germany,64.94082840236686,507,22.783308885490467,Europe
@@ -5718,7 +5718,7 @@ stijn-ennekens,Stijn  Ennekens,1984.0,,Belgium,107.33150684931506,365,,Europe
 manuel-martinez-1,Manuel  Martinez,1967.0,,Spain,94.60194174757281,206,,Europe
 roger-blockx,Roger  Blockx,1943.0,,Belgium,141.67796610169492,59,,Europe
 yonathan-monsalve,Yonathan  Monsalve,1989.0,176.0,Venezuela,95.37931034482759,145,20.015495867768596,South America
-jean-nuttli,Jean  Nüttli,1974.0,178.6,Switzerland,80.75438596491227,513,21.94497704555401,Europe
+jean-nuttli,Jean  Nüttli,1974.0,180.6,Switzerland,80.75438596491227,513,21.461622326954938,Europe
 domenico-passuello,Domenico  Passuello,1978.0,,Italy,82.21690590111643,627,,Europe
 rob-goris,Rob  Goris,1982.0,184.0,Belgium,117.29946524064171,187,25.697069943289225,Europe
 serge-beucherie,Serge  Beucherie,1955.0,,France,95.6858407079646,226,,Europe
@@ -5798,7 +5798,7 @@ gorka-verdugo,Gorka  Verdugo,1978.0,181.0,Spain,62.64857142857143,350,21.6721101
 mario-aparicio-munoz,Mario  Aparicio,2000.0,185.0,Spain,89.83443708609272,151,20.16070124178232,Europe
 eddy-bouwmans,Eddy  Bouwmans,1968.0,,Netherlands,59.77639751552795,483,,Europe
 manuel-anton,Manuel Ángel  Antón,1966.0,,Spain,85.66257668711657,163,,Europe
-matheo-vercher,Mattéo  Vercher,2001.0,171.0,France,66.4756446991404,349,20.519134092541297,Europe
+matheo-vercher,Mattéo  Vercher,2001.0,171.0,France,66.4756446991404,349,20.997913888033928,Europe
 alexandre-delettre,Alexandre  Delettre,1997.0,170.0,France,79.96146788990826,545,21.453287197231838,Europe
 eric-de-vlaeminck,Eric De Vlaeminck,1945.0,,Belgium,81.49881796690308,423,,Europe
 juan-fuentes,Juan Manuel  Fuentes,1977.0,,Spain,43.1496062992126,508,,Europe
@@ -5993,7 +5993,7 @@ fabio-mazzucco,Fabio  Mazzucco,1999.0,183.0,Italy,72.625,96,20.603780345785182,E
 leonardo-sierra,Leonardo  Sierra,1968.0,,Venezuela,82.21690590111643,627,,South America
 rafael-nuritdinov,Rafael  Nuritdinov,1977.0,180.0,Uzbekistan,72.6070796460177,565,20.98765432098765,Asia
 said-haddou,Saïd  Haddou,1982.0,190.0,France,90.79194630872483,447,22.1606648199446,Europe
-erik-nordsaeter-resell,Erik Nordsæter  Resell,1996.0,192.0,Norway,96.4,110,20.996093750000004,Europe
+erik-nordsaeter-resell,Erik Nordsæter  Resell,1996.0,192.0,Norway,96.4,110,20.399305555555557,Europe
 carlos-zarate,Carlos  Zárate,1980.0,180.0,Spain,88.51351351351352,37,20.98765432098765,Europe
 jose-enrique-cima-prado,José Enrique  Cima,1952.0,,Spain,59.03661971830986,355,,Europe
 carlos-castano-panadero,Carlos  Castaño,1979.0,,Spain,101.72857142857143,210,,Europe
@@ -6023,7 +6023,7 @@ kalle-kriit,Kalle  Kriit,1983.0,181.0,Estonia,82.60183066361556,437,19.230182228
 juan-santiago-zurano,Juan Santiago  Zurano,1948.0,,Spain,114.64123711340206,485,,Europe
 federico-morini,Federico  Morini,1976.0,,Italy,101.92857142857143,182,,Europe
 oscar-pereiro,Óscar  Pereiro,1977.0,177.0,Spain,67.90304182509506,526,21.38593635289987,Europe
-carlos-galarreta,Carlos  Galarreta,1967.0,174.0,Spain,81.1639344262295,122,22.261857576958647,Europe
+carlos-galarreta,Carlos  Galarreta,1967.0,174.0,Spain,81.1639344262295,122,21.865504029594398,Europe
 domen-novak,Domen  Novak,1995.0,181.0,Slovenia,54.51846590909091,704,21.36686914318855,Europe
 tom-veelers,Tom  Veelers,1984.0,184.0,Netherlands,127.62290502793296,358,22.152646502835537,Europe
 tomasz-marczynski,Tomasz  Marczyński,1984.0,180.0,Poland,92.41980198019802,505,21.604938271604937,Europe
@@ -6048,7 +6048,7 @@ alessandro-donati,Alessandro  Donati,1979.0,186.0,Italy,94.01272264631044,393,20
 ruggero-gialdini,Ruggero  Gialdini,1950.0,,Italy,99.6923076923077,52,,Europe
 herve-duclos-lassalle,Hervé  Duclos-Lassalle,1979.0,174.0,France,70.89547038327527,574,20.808561236623067,Europe
 erwin-biets,Erwin  Biets,1968.0,,Belgium,96.2405303030303,528,,Europe
-eric-antonio-fagundez,Eric Antonio  Fagúndez,1998.0,180.0,Uruguay,110.30357142857143,56,22.34567901234568,South America
+eric-antonio-fagundez,Eric Antonio  Fagúndez,1998.0,180.0,Uruguay,110.30357142857143,56,21.54320987654321,South America
 alessandro-guerra,Alessandro  Guerra,1974.0,,Italy,99.8192419825073,343,,Europe
 fernando-pinero,Fernando  Piñero,1967.0,,Spain,95.02288984263234,699,,Europe
 dirk-baert,Dirk  Baert,1949.0,,Belgium,114.18407960199005,201,,Europe
@@ -6084,7 +6084,7 @@ kim-heiduk,Kim  Heiduk,2000.0,184.0,Germany,89.79425837320574,418,20.67580340264
 jacob-hindsgaul-madsen,Jacob  Hindsgaul,2000.0,190.0,Denmark,100.83068783068784,189,18.559556786703602,Europe
 savva-novikov,Savva  Novikov,1999.0,177.0,Russia,81.64492753623189,138,20.747550193111813,Europe
 francisque-teyssier,Francisque  Teyssier,1969.0,,France,98.29813664596273,483,,Europe
-henri-vandenabeele,Henri  Vandenabeele,2000.0,181.0,Belgium,77.4,700,19.413326821525594,Europe
+henri-vandenabeele,Henri  Vandenabeele,2000.0,181.0,Belgium,77.4,700,20.695338970116907,Europe
 santos-gonzalez,Santos  González,1973.0,179.0,Spain,100.75409836065573,366,21.847008520333322,Europe
 johannes-adamietz,Johannes  Adamietz,1998.0,174.0,Germany,100.10328638497653,213,20.147971991015986,Europe
 hendrik-van-dyck,Hendrik Van Dyck,1974.0,,Belgium,125.43859649122807,57,,Europe
