@@ -75,7 +75,7 @@ willy-vigouroux,Willy  Vigouroux,1956,,,Belgium
 jens-wallays,Jens  Wallays,1992,64.0,176.0,Belgium
 mads-pedersen,Mads  Pedersen,1995,70.0,180.0,Denmark
 jose-herrada,José  Herrada,1985,65.0,175.0,Spain
-idar-andersen,Idar  Andersen,1999,71.6,182.0,Norway
+idar-andersen,Idar  Andersen,1999,68.2,182.0,Norway
 sylvain-moniquet,Sylvain  Moniquet,1998,61.0,175.0,Belgium
 pedro-miguel-lopes,Pedro Miguel  Lopes,1999,68.0,180.0,Portugal
 adriano-baffi,Adriano  Baffi,1962,70.0,176.0,Italy
@@ -113,7 +113,7 @@ jay-sweet,Jay  Sweet,1975,69.0,175.0,Australia
 nic-hamilton,Nic  Hamilton,1986,,,Canada
 enrico-barbin,Enrico  Barbin,1990,60.0,166.0,Italy
 alain-van-den-bossche,Alain Van Den Bossche,1965,,,Belgium
-mario-de-sarraga,Mario de Sárraga,1980,69.0,181.0,Spain
+mario-de-sarraga,Mario de Sárraga,1980,69.0,178.8,Spain
 hubert-arbes,Hubert  Arbès,1950,,,France
 kevin-seeldraeyers,Kevin  Seeldraeyers,1986,60.0,174.0,Belgium
 peter-van-de-knoop,Peter Van De Knoop,1957,,,Netherlands
@@ -218,7 +218,7 @@ dietrich-thurau,Dietrich  Thurau,1954,,,Germany
 arnaud-gerard,Arnaud  Gérard,1984,70.0,184.0,France
 christophe-lavainne,Christophe  Lavainne,1963,,,France
 gonzalo-rabunal-rios,Gonzalo  Rabuñal,1984,65.0,180.0,Spain
-thomas-bonnet,Thomas  Bonnet,1998,62.6,175.0,France
+thomas-bonnet,Thomas  Bonnet,1998,65.4,175.0,France
 jean-jacques-philipp,Jean-Jacques  Philipp,1961,,,France
 nico-verhoeven,Nico  Verhoeven,1961,,,Netherlands
 laurent-chotard,Laurent  Chotard,1976,,,France
@@ -260,7 +260,7 @@ bruno-cenghialta,Bruno  Cenghialta,1962,73.0,184.0,Italy
 johan-bruyneel,Johan  Bruyneel,1964,71.0,182.0,Belgium
 martin-prazdnovsky,Martin  Prázdnovský,1975,,,Slovakia
 dorian-godon,Dorian  Godon,1996,73.0,191.0,France
-syver-waersted,Syver  Wærsted,1996,79.8,193.0,Norway
+syver-waersted,Syver  Wærsted,1996,79.6,193.0,Norway
 antonio-bucciero,Antonio  Bucciero,1982,,,Italy
 julien-stassen,Julien  Stassen,1988,66.0,182.0,Belgium
 markus-hoelgaard,Markus  Hoelgaard,1994,74.0,188.0,Norway
@@ -354,7 +354,7 @@ juan-carlos-martin,Juan Carlos  Martin,1967,,,Spain
 eddy-beugels,Eddy  Beugels,1944,,,Netherlands
 jacques-van-meer,Jacques van Meer,1958,,,Netherlands
 matthew-stephens,Matthew  Stephens,1970,64.0,182.0,Great Britain
-loe-van-belle,Loe van Belle,2002,74.6,184.0,Netherlands
+loe-van-belle,Loe van Belle,2002,73.0,184.0,Netherlands
 leonardo-scarselli,Leonardo  Scarselli,1975,67.0,180.0,Italy
 maxime-mederel,Maxime  Méderel,1980,59.0,173.0,France
 lukas-ruegg,Lukas  Rüegg,1996,66.0,177.0,Switzerland
@@ -402,10 +402,10 @@ jean-patrick-nazon,Jean-Patrick  Nazon,1977,74.0,182.0,France
 marek-canecky,Marek  Čanecký,1988,72.0,187.0,Slovakia
 stefan-kung,Stefan  Küng,1993,83.0,193.0,Switzerland
 mathew-hayman,Mathew  Hayman,1978,78.0,190.0,Australia
-negasi-abreha,Negasi Haylu  Abreha,2000,73.8,186.0,Ethiopia
+negasi-abreha,Negasi Haylu  Abreha,2000,73.4,186.0,Ethiopia
 robin-chaigneau,Robin  Chaigneau,1988,80.0,185.0,Netherlands
 jean-jacques-henry,Jean-Jacques  Henry,1967,,,France
-davide-baldaccini,Davide  Baldaccini,1998,68.8,176.0,Italy
+davide-baldaccini,Davide  Baldaccini,1998,66.8,176.0,Italy
 laudelino-cubino,Laudelino  Cubino,1963,,,Spain
 joel-suter,Joel  Suter,1998,75.0,190.0,Switzerland
 arnoud-van-groen,Arnoud van Groen,1983,69.0,183.0,Netherlands
@@ -440,7 +440,7 @@ rolf-haller,Rolf  Haller,1957,,,Germany
 carlos-muniz,Carlos  Muñiz,1964,,,Spain
 marco-tizza,Marco  Tizza,1992,58.0,173.0,Italy
 sam-bewley,Sam  Bewley,1987,81.0,191.0,New Zealand
-pier-andre-cote,Pier-André  Côté,1997,63.6,181.0,Canada
+pier-andre-cote,Pier-André  Côté,1997,67.8,181.0,Canada
 angel-de-las-heras,Ángel  de las Heras,1957,,,Spain
 andre-massard,André  Massard,1957,,,Switzerland
 fabien-patanchon,Fabien  Patanchon,1983,69.0,179.0,France
@@ -471,7 +471,7 @@ warren-barguil,Warren  Barguil,1991,61.0,183.0,France
 john-dekeukelaere,John  Dekeukelaere,1962,,,Belgium
 unai-cuadrado,Unai  Cuadrado,1997,,,Spain
 gines-garcia-pallares,Ginés  García,1959,,,Spain
-valere-thiebaud,Valère  Thiébaud,1999,74.6,184.0,Switzerland
+valere-thiebaud,Valère  Thiébaud,1999,73.0,184.0,Switzerland
 andrei-kunitski,Andrei  Kunitski,1984,72.0,176.0,Belarus
 jose-manuel-uria,José Manuel  Uría,1969,,,Spain
 renzo-ragnetti,Renzo  Ragnetti,1973,,,Italy
@@ -483,7 +483,7 @@ marc-sergeant,Marc  Sergeant,1959,76.0,187.0,Belgium
 marc-vercammen,Marc  Vercammen,1960,,,Belgium
 pol-verschuere,Pol  Verschuere,1955,,,Belgium
 alexey-tsatevich,Alexey  Tsatevich,1989,64.0,169.0,Russia
-louis-bendixen,Louis  Bendixen,1995,74.6,190.0,Denmark
+louis-bendixen,Louis  Bendixen,1995,76.6,190.0,Denmark
 luis-edgar-espinosa-sepulveda,Luis Edgar  Espinosa,1967,,,Colombia
 thomas-frei,Thomas  Frei,1985,71.0,178.0,Switzerland
 felix-odebrecht,Felix  Odebrecht,1984,,,Germany
@@ -565,7 +565,7 @@ jose-maria-yurrebaso,José Maria  Yurrebaso,1955,,,Spain
 aad-van-den-hoek,Aad van den Hoek,1951,77.0,186.0,Netherlands
 julio-alberto-perez-cuapio,Julio Alberto  Perez Cuapio,1977,58.0,171.0,Mexico
 john-bogers,John  Bogers,1964,,,Netherlands
-robin-carpenter,Robin  Carpenter,1992,66.2,178.0,United States
+robin-carpenter,Robin  Carpenter,1992,64.8,178.0,United States
 radoslav-rogina,Radoslav  Rogina,1979,70.0,186.0,Croatia
 ivan-santos,Iván  Santos,1982,,,Spain
 richard-chassot,Richard  Chassot,1970,,,Switzerland
@@ -685,7 +685,7 @@ dante-coccolo,Dante  Coccolo,1954,,,France
 august-herijgers,August  Herijgers,1950,,,Belgium
 michel-zanoli,Michel  Zanoli,1968,,,Netherlands
 roland-vogeli,Roland  Vogeli,1959,,,Switzerland
-frank-hoste,Frank  Hoste,1955,76.0,188.4,Belgium
+frank-hoste,Frank  Hoste,1955,76.0,187.6,Belgium
 barry-hoban,Barry  Hoban,1940,,,Great Britain
 maxim-rudenko,Maxim  Rudenko,1979,,,Ukraine
 willy-van-neste,Willy Van Neste,1944,,,Belgium
@@ -718,7 +718,7 @@ gleb-brussenskiy,Gleb  Brussenskiy,2000,64.0,178.0,Kazakhstan
 amaro-manuel-antunes,Amaro  Antunes,1990,58.0,173.0,Portugal
 manuel-luis-campos-abreu,Manuel Luis Campos  Abreu,1963,,,Portugal
 reto-bergmann,Reto  Bergmann,1976,68.0,183.0,Switzerland
-vicente-belda,Vicente  Belda,1954,52.8,154.0,Spain
+vicente-belda,Vicente  Belda,1954,53.6,154.0,Spain
 daniel-freitas,Daniel  Freitas,1991,64.0,171.0,Portugal
 giovanni-lonardi,Giovanni  Lonardi,1996,70.0,180.0,Italy
 michael-rasmussen,Michael  Rasmussen,1974,58.0,174.0,Denmark
@@ -903,7 +903,7 @@ erwin-nijboer,Erwin  Nijboer,1964,,,Netherlands
 david-etxebarria,David  Etxebarria,1973,55.0,164.0,Spain
 rui-carvalho,Rui  Carvalho,1995,60.0,175.0,Portugal
 fabrizio-fabbri,Fabrizio  Fabbri,1948,,,Italy
-emanuel-duarte,Emanuel  Duarte,1997,71.6,182.0,Portugal
+emanuel-duarte,Emanuel  Duarte,1997,68.2,182.0,Portugal
 christophe-moreau,Christophe  Moreau,1971,71.0,186.0,France
 antonio-rizzi,Antonio  Rizzi,1978,,,Italy
 julian-usano-martinez,Julian  Usano,1976,62.0,178.0,Spain
@@ -925,7 +925,7 @@ jose-adrian-bonilla,José Adrián  Bonilla,1978,73.0,178.0,Costa Rica
 lorenzo-ferdeghini,Lorenzo  Ferdeghini,1971,,,Italy
 federico-zurlo,Federico  Zurlo,1994,70.0,178.0,Italy
 fernando-sousa-fernandes,Fernando  Fernandes Sousa,1956,,,Portugal
-embret-svestad-bardseng,Embret  Svestad-Bårdseng,2002,73.8,185.0,Norway
+embret-svestad-bardseng,Embret  Svestad-Bårdseng,2002,72.6,185.0,Norway
 sylvain-golay,Sylvain  Golay,1972,,,Switzerland
 egidijus-juodvalkis,Egidijus  Juodvalkis,1988,73.0,182.0,Lithuania
 geoffrey-demeyere,Geoffrey  Demeyere,1976,,,Belgium
@@ -953,7 +953,7 @@ jose-maria-gonzalez-barcala,Jose Maria  Gonzalez,1959,,,Spain
 luis-felipe-laverde-jimenez,Luis Felipe  Laverde,1979,63.0,169.0,Colombia
 fredy-gonzalez,Freddy Excelino  González,1975,55.0,160.0,Colombia
 luis-fernandes,Luís  Fernandes,1987,63.0,173.0,Portugal
-joaquim-adrego-pereira-andrade,Joaquim Adrego Pereira  Andrade,1969,62.6,175.0,Portugal
+joaquim-adrego-pereira-andrade,Joaquim Adrego Pereira  Andrade,1969,65.4,175.0,Portugal
 fernando-quevedo,Fernando  Quevedo,1964,,,Spain
 gaztanaga-echevarria,Mikel  Gaztañaga,1979,,,Spain
 christophe-brandt,Christophe  Brandt,1977,66.0,182.0,Belgium
@@ -1014,7 +1014,7 @@ alessandro-bertolini,Alessandro  Bertolini,1971,63.0,171.0,Italy
 adrie-van-der-poel,Adrie van der Poel,1959,70.0,181.0,Netherlands
 santos-hernandez,Santos  Hernandez,1967,,,Spain
 gianluca-bordignon,Gianluca  Bordignon,1966,,,Italy
-davide-orrico,Davide  Orrico,1990,70.0,178.6,Italy
+davide-orrico,Davide  Orrico,1990,70.0,180.6,Italy
 staf-scheirlinckx,Staf  Scheirlinckx,1979,78.0,192.0,Belgium
 giovanni-moro,Giovanni  Moro,1958,,,Italy
 ezio-serpelloni,Ezio  Serpelloni,1959,,,Italy
@@ -1124,7 +1124,7 @@ stephan-schreck,Stephan  Schreck,1978,76.0,185.0,Germany
 philippe-bouvatier,Philippe  Bouvatier,1964,,,France
 frans-verhaegen,Frans  Verhaegen,1948,,,Belgium
 antonio-d-alonzo,Antonio  D'alonzo,1955,,,Italy
-jacob-eriksson,Jacob  Eriksson,1999,71.6,182.0,Sweden
+jacob-eriksson,Jacob  Eriksson,1999,68.2,182.0,Sweden
 lilian-calmejane,Lilian  Calmejane,1992,70.0,184.0,France
 ferdinand-bracke,Ferdinand  Bracke,1939,79.0,184.0,Belgium
 thijs-al,Thijs  Al,1980,72.0,180.0,Netherlands
@@ -1176,7 +1176,7 @@ marco-votolo,Marco Franco  Votolo,1964,,,Italy
 jan-barta,Jan  Bárta,1984,75.0,184.0,Czech Republic
 ronny-bossant,Ronny  Bossant,1954,,,Belgium
 bruno-boscardin,Bruno  Boscardin,1970,,,Switzerland
-xabier-isasa-larranaga,Xabier  Isasa,2001,73.8,185.0,Spain
+xabier-isasa-larranaga,Xabier  Isasa,2001,72.6,185.0,Spain
 jose-pesarrodona,José  Pesarrodona,1946,,,Spain
 hilton-clarke,Hilton  Clarke,1979,70.0,180.0,Australia
 loic-lamouller,Loïc  Lamouller,1978,,,France
@@ -1457,7 +1457,7 @@ alessio-di-basco,Alessio Di Basco,1964,,,Italy
 julien-vermote,Julien  Vermote,1989,74.0,179.0,Belgium
 stephane-guay,Stéphane  Guay,1961,,,France
 nicolas-rousseau,Nicolas  Rousseau,1983,70.0,176.0,France
-ivan-quaranta,Ivan  Quaranta,1974,67.4,174.0,Italy
+ivan-quaranta,Ivan  Quaranta,1974,66.2,174.0,Italy
 jarlinson-pantano,Jarlinson  Pantano,1988,61.0,173.0,Colombia
 marcel-meisen,Marcel  Meisen,1989,62.0,172.0,Germany
 kurt-huygens,Kurt  Huygens,1968,,,Belgium
@@ -1471,7 +1471,7 @@ stephane-petilleau,Stéphane  Petilleau,1971,,,France
 werner-wuller,Werner  Wuller,1961,,,Germany
 vincenzo-galati,Vincenzo  Galati,1969,,,Italy
 roberto-ferrari,Roberto  Ferrari,1983,73.0,173.0,Italy
-luis-ocana,Luis  Ocaña,1945,66.2,178.0,Spain
+luis-ocana,Luis  Ocaña,1945,64.8,178.0,Spain
 serge-parsani,Serge  Parsani,1952,,,Italy
 hermann-pernsteiner,Hermann  Pernsteiner,1990,55.0,168.0,Austria
 kevyn-ista,Kevyn  Ista,1984,70.0,183.0,Belgium
@@ -1641,7 +1641,7 @@ fabian-jeker,Fabian  Jeker,1968,72.0,177.0,Switzerland
 jan-hruska,Jan  Hruška,1975,62.0,174.0,Czech Republic
 william-walker,William  Walker,1985,,,Australia
 amael-moinard,Amaël  Moinard,1982,69.0,180.0,France
-nicolas-dalla-valle,Nicolas  Dalla Valle,1997,73.0,181.0,Italy
+nicolas-dalla-valle,Nicolas  Dalla Valle,1997,73.0,184.4,Italy
 brent-bookwalter,Brent  Bookwalter,1984,70.0,180.0,United States
 pedro-merino-criado,Pedro  Merino,1987,55.0,170.0,Spain
 pierino-gavazzi,Pierino  Gavazzi,1950,67.0,169.0,Italy
@@ -1806,7 +1806,7 @@ emile-cambre,Emile  Cambré,1948,,,Belgium
 peter-van-brecht,Peter Van Brecht,1965,,,Belgium
 alberto-fernandez-de-la-puebla-ramos,Alberto  Fernández de la Puebla,1984,63.0,174.0,Spain
 javier-claramunt,Javier  Claramunt,1968,,,Spain
-alfons-de-bal,Alfons De Bal,1943,52.8,155.0,Belgium
+alfons-de-bal,Alfons De Bal,1943,53.6,155.0,Belgium
 timothy-roe,Timothy  Roe,1989,66.0,183.0,Australia
 cristian-moreni,Cristian  Moreni,1972,65.0,175.0,Italy
 matthew-busche,Matthew  Busche,1985,69.0,174.0,United States
@@ -1815,7 +1815,7 @@ daniel-atienza-urendez,Daniel  Atienza,1974,60.0,170.0,Spain
 michael-giebelmann,Michael  Giebelmann,1974,,,Germany
 frans-van-looy,Frans Van Looy,1950,75.0,179.0,Belgium
 anton-luengo,Antton  Luengo,1981,,,Spain
-adam-de-vos,Adam de Vos,1993,77.6,187.0,Canada
+adam-de-vos,Adam de Vos,1993,74.6,187.0,Canada
 ludo-engelen,Ludo  Engelen,1957,,,Belgium
 xavier-aldanondo,Xavier  Aldanondo,1967,,,Spain
 jose-angel-vidal,José Angel  Vidal,1969,71.0,172.0,Spain
@@ -1859,7 +1859,7 @@ nicolas-portal,Nicolas  Portal,1979,70.0,184.0,France
 jan-huisjes,Jan  Huisjes,1951,,,Netherlands
 fabio-bulgarelli,Fabio  Bulgarelli,1977,,,Italy
 jerome-chiotti,Jérôme  Chiotti,1972,,,France
-yanto-barker,Yanto  Barker,1980,71.6,182.0,Great Britain
+yanto-barker,Yanto  Barker,1980,68.2,182.0,Great Britain
 ferdi-van-den-haute,Ferdi Van Den Haute,1952,,,Belgium
 martijn-verschoor,Martijn  Verschoor,1985,74.5,179.0,Netherlands
 lauri-aus,Lauri  Aus,1970,75.0,179.0,Estonia
@@ -2178,7 +2178,7 @@ giovanni-renosto,Giovanni  Renosto,1960,,,Italy
 juan-carlos-alonso,Juan Carlos  Alonso,1958,,,Spain
 andreas-matzbacher,Andreas  Matzbacher,1982,,,Austria
 javier-francisco-elorriaga,Javier Francisco  Elorriaga,1947,85.0,179.0,Spain
-umberto-poli,Umberto  Poli,1996,61.4,167.0,Italy
+umberto-poli,Umberto  Poli,1996,62.6,167.0,Italy
 alejandro-marque,Alejandro Manuel  Marque,1981,68.0,182.0,Spain
 gregolry-panizo,Gregolry  Panizo,1985,72.0,183.0,Brazil
 giovanni-carboni,Giovanni  Carboni,1995,61.0,180.0,Italy
@@ -2301,10 +2301,10 @@ bernard-draux,Bernard  Draux,1951,,,Belgium
 michel-ries,Michel  Ries,1998,67.0,184.0,Luxembourg
 claude-moreau,Claude  Moreau,1958,,,France
 ueli-sutter,Ueli  Sutter,1947,70.0,181.0,Switzerland
-dario-lillo,Dario  Lillo,2002,73.8,185.0,Switzerland
-miguel-heidemann,Miguel  Heidemann,1998,73.8,186.0,Germany
+dario-lillo,Dario  Lillo,2002,72.6,185.0,Switzerland
+miguel-heidemann,Miguel  Heidemann,1998,73.4,186.0,Germany
 caleb-ewan,Caleb  Ewan,1994,69.0,167.0,Australia
-torstein-traeen,Torstein  Træen,1995,63.6,181.0,Norway
+torstein-traeen,Torstein  Træen,1995,67.8,181.0,Norway
 roland-smet,Roland  Smet,1952,,,France
 elmar-reinders,Elmar  Reinders,1992,78.1,190.0,Netherlands
 maurizio-rossi,Maurizio  Rossi,1962,,,Italy
@@ -2567,7 +2567,7 @@ luis-fernandez-oliveira,Luis  Fernández,1980,,,Spain
 thomas-danielson,Tom  Danielson,1978,58.5,177.0,United States
 clement-alleno,Clément  Alleno,2000,69.0,180.0,France
 harm-vanhoucke,Harm  Vanhoucke,1997,65.0,181.0,Belgium
-bogdan-bondariew,Bogdan  Bondariew,1974,81.6,196.0,Ukraine
+bogdan-bondariew,Bogdan  Bondariew,1974,82.4,196.0,Ukraine
 pascal-ducrot,Pascal  Ducrot,1965,,,Switzerland
 jos-lammertink,Jos  Lammertink,1958,,,Netherlands
 mathieu-heijboer,Mathieu  Heijboer,1982,78.0,192.0,Netherlands
@@ -2617,7 +2617,7 @@ valentin-retailleau,Valentin  Retailleau,2000,64.0,181.0,France
 jose-joaquin-rojas,José Joaquín  Rojas,1985,70.0,177.0,Spain
 inaki-murua-gorostidi,Iñaki  Murua,1966,,,Spain
 danny-lippens,Danny  Lippens,1961,,,Belgium
-anders-halland-johannessen,Anders Halland  Johannessen,1999,68.8,176.0,Norway
+anders-halland-johannessen,Anders Halland  Johannessen,1999,66.8,176.0,Norway
 quintino-rodrigues,Quintino  Rodrigues,1971,,,Portugal
 cezary-zamana,Cezary  Zamana,1967,74.0,185.0,Poland
 dirk-durant,Dirk  Durant,1961,,,Belgium
@@ -2730,7 +2730,7 @@ pascal-elaut,Pascal  Elaut,1965,,,Belgium
 michel-pollentier,Michel  Pollentier,1951,62.0,167.0,Belgium
 pietro-zucconi,Pietro  Zucconi,1975,63.0,171.0,Switzerland
 jokin-ormaetxea,Jokin  Ormaetxea,1980,,,Spain
-christian-raymond,Christian  Raymond,1943,66.2,178.0,France
+christian-raymond,Christian  Raymond,1943,64.8,178.0,France
 christopher-williams,Christopher  Williams,1981,75.0,181.0,Australia
 charlie-quarterman,Charlie  Quarterman,1998,75.0,180.0,Great Britain
 jens-jentner,Jens  Jentner,1968,,,Switzerland
@@ -2851,7 +2851,7 @@ arnaud-coyot,Arnaud  Coyot,1980,76.0,195.0,France
 wim-maessen,Wim  Maessen,1956,,,Netherlands
 patrick-schoovaerts,Patrick  Schoovaerts,1964,,,Belgium
 gregor-braun,Gregor  Braun,1955,,,Germany
-max-poole,Max  Poole,2003,73.8,185.0,Great Britain
+max-poole,Max  Poole,2003,72.6,185.0,Great Britain
 stefano-zanatta,Stefano  Zanatta,1964,,,Italy
 john-carlsen,John  Carlsen,1961,,,Denmark
 brian-van-goethem,Brian van Goethem,1991,77.0,186.0,Netherlands
@@ -2877,7 +2877,7 @@ dylan-groenewegen,Dylan  Groenewegen,1993,70.0,177.0,Netherlands
 ludo-loos,Ludo  Loos,1955,,,Belgium
 vladimir-smirnov,Vladimir  Smirnov,1978,,,Lithuania
 regis-simon,Régis  Simon,1958,,,France
-andrzej-mierzejewski,Andrzej  Mierzejewski,1960,63.6,173.0,Poland
+andrzej-mierzejewski,Andrzej  Mierzejewski,1960,62.6,173.0,Poland
 david-boily,David  Boily,1990,60.0,180.0,Canada
 luca-rota,Luca  Rota,1963,,,Italy
 gianluca-valoti,Gianluca  Valoti,1973,,,Italy
@@ -3057,12 +3057,12 @@ franco-pellizotti,Franco  Pellizotti,1978,64.0,175.0,Italy
 daryl-impey,Daryl  Impey,1984,72.0,181.0,South Africa
 benjamin-day,Benjamin  Day,1978,68.0,178.0,Australia
 goncalo-amorim,Gonçalo  Amorim,1972,67.0,177.0,Portugal
-venceslau-fernandes,Venceslau  Fernandes,1996,63.6,181.0,Portugal
+venceslau-fernandes,Venceslau  Fernandes,1996,67.8,181.0,Portugal
 nico-sijmens,Nico  Sijmens,1978,69.0,175.0,Belgium
-sandy-dujardin,Sandy  Dujardin,1997,66.2,178.0,France
+sandy-dujardin,Sandy  Dujardin,1997,64.8,178.0,France
 loic-vliegen,Loïc  Vliegen,1993,70.0,184.0,Belgium
 antonio-espejo,Antonio  Espejo,1968,,,Spain
-oliver-rees,Oliver  Rees,2001,74.6,184.0,Great Britain
+oliver-rees,Oliver  Rees,2001,73.0,184.0,Great Britain
 michele-bartoli,Michele  Bartoli,1970,65.0,179.0,Italy
 paul-lapeira,Paul  Lapeira,2000,64.0,176.0,France
 simone-petilli,Simone  Petilli,1993,65.0,178.0,Italy
@@ -3142,7 +3142,7 @@ yevgeniy-fedorov,Yevgeniy  Fedorov,2000,80.0,193.0,Kazakhstan
 gianluca-brambilla,Gianluca  Brambilla,1987,57.0,170.0,Italy
 stefan-de-bod,Stefan de Bod,1996,66.0,183.0,South Africa
 simon-guglielmi,Simon  Guglielmi,1997,66.0,180.0,France
-nils-brun,Nils  Brun,2000,64.0,176.4,Switzerland
+nils-brun,Nils  Brun,2000,64.0,172.2,Switzerland
 johan-dekkers,Johan  Dekkers,1978,,,Belgium
 edward-ravasi,Edward  Ravasi,1994,61.0,181.0,Italy
 pascal-kohlvelter,Pascal  Kohlvelter,1965,,,Luxembourg
@@ -3281,7 +3281,7 @@ bernard-vifian,Bernard  Vifian,1944,,,Switzerland
 emilio-garcia-perez,Emilio  Garcia,1959,,,Spain
 carlos-barredo,Carlos  Barredo,1981,61.0,177.0,Spain
 davide-dall-olio,Davide  Dall'Olio,1969,,,Italy
-charly-mottet,Charly  Mottet,1962,56.8,164.0,France
+charly-mottet,Charly  Mottet,1962,57.2,164.0,France
 oscar-gatto,Oscar  Gatto,1985,67.0,174.0,Italy
 ronny-van-holen,Ronny Van Holen,1959,,,Belgium
 valerio-lualdi,Valerio  Lualdi,1951,,,Italy
@@ -3387,7 +3387,7 @@ mauro-gianetti,Mauro  Gianetti,1964,62.0,175.0,Switzerland
 adam-toupalik,Adam  Ťoupalík,1996,65.0,175.0,Czech Republic
 giuseppe-calcaterra,Giuseppe  Calcaterra,1964,,,Italy
 philippe-leleu,Philippe  Leleu,1958,,,France
-johannes-staune-mittet,Johannes  Staune-Mittet,2002,71.6,182.0,Norway
+johannes-staune-mittet,Johannes  Staune-Mittet,2002,68.2,182.0,Norway
 federico-canuti,Federico  Canuti,1985,68.0,182.0,Italy
 kilian-frankiny,Kilian  Frankiny,1994,67.0,179.0,Switzerland
 giovanni-aleotti,Giovanni  Aleotti,1999,67.0,180.0,Italy
@@ -3446,7 +3446,7 @@ kenny-van-der-schueren,Kenny Van Der Schueren,1982,,,Belgium
 roger-rosiers,Roger  Rosiers,1946,78.0,178.0,Belgium
 david-tanner,David  Tanner,1984,70.0,184.0,Australia
 sebastien-delfosse,Sébastien  Delfosse,1982,73.0,187.0,Belgium
-rob-britton,Rob  Britton,1984,74.4,188.0,Canada
+rob-britton,Rob  Britton,1984,76.4,188.0,Canada
 lluis-guillermo-mas,Lluís  Mas,1989,69.0,181.0,Spain
 martial-locatelli,Martial  Locatelli,1971,,,France
 fabio-casas,Fabio  Casas,1959,,,Colombia
@@ -3601,7 +3601,7 @@ barnabas-peak,Barnabás  Peák,1998,74.0,183.0,Hungary
 brian-smith,Brian  Smith,1967,,,Great Britain
 marco-magnani,Marco  Magnani,1974,64.0,177.0,Italy
 fabien-sanchez,Fabien  Sanchez,1983,75.0,188.0,France
-jonas-iversby-hvideberg,Jonas Iversby  Hvideberg,1999,73.8,185.0,Norway
+jonas-iversby-hvideberg,Jonas Iversby  Hvideberg,1999,72.6,185.0,Norway
 sammie-moreels,Sammie  Moreels,1965,,,Belgium
 manrico-ronchiato,Manrico  Ronchiato,1960,,,Italy
 milan-kadlec,Milan  Kadlec,1974,70.0,179.0,Czech Republic
@@ -3670,7 +3670,7 @@ paul-ourselin,Paul  Ourselin,1994,70.0,185.0,France
 jensen-plowright,Jensen  Plowright,2000,78.0,177.0,Australia
 julen-amezqueta,Julen  Amezqueta,1993,63.0,174.0,Spain
 romero-jesus-buendia,Jesús  Buendía,1982,,,Spain
-sergey-kolesnikov,Sergey  Kolesnikov,1986,68.6,179.0,Russia
+sergey-kolesnikov,Sergey  Kolesnikov,1986,70.0,179.0,Russia
 claudio-cucinotta,Claudio  Cucinotta,1982,71.0,177.0,Italy
 paolo-tiralongo,Paolo  Tiralongo,1977,63.0,178.0,Italy
 rafaa-chtioui,Rafaâ  Chtioui,1986,82.0,190.0,Tunisia
@@ -3690,13 +3690,13 @@ luca-belluomini,Luca  Belluomini,1976,,,Italy
 patrick-verplancke,Patrick  Verplancke,1962,,,Belgium
 pierre-herinne,Pierre  Herinne,1968,,,Belgium
 ondrej-fadrny,Ondřej  Fadrný,1978,,,Czech Republic
-sebastian-kolze-changizi,Sebastian  Kolze Changizi,2000,63.6,181.0,Denmark
+sebastian-kolze-changizi,Sebastian  Kolze Changizi,2000,67.8,181.0,Denmark
 jesper-asselman,Jesper  Asselman,1990,69.0,184.0,Netherlands
 joseph-bruyere,Joseph  Bruyère,1948,,,Belgium
 dario-montani,Dario  Montani,1961,,,Italy
 vladimir-miholjevic,Vladimir  Miholjević,1974,68.0,180.0,Croatia
 michele-paletti,Michele  Paletti,1967,,,Italy
-vadim-kravchenko,Vadim  Kravchenko,1969,66.2,178.0,Kazakhstan
+vadim-kravchenko,Vadim  Kravchenko,1969,64.8,178.0,Kazakhstan
 riccardo-faverio,Riccardo  Faverio,1969,,,Italy
 javier-moreno,Javier  Moreno,1984,63.0,181.0,Spain
 nuno-ribeiro,Nuno  Ribeiro,1977,59.0,170.0,Portugal
@@ -3745,7 +3745,7 @@ jasha-sutterlin,Jasha  Sütterlin,1992,78.0,184.0,Germany
 jesus-gabriel-arguintxona-abarrategui,Jesús Gabriel  Arguintxona,1962,,,Spain
 alessandro-monaco,Alessandro  Monaco,1998,,,Italy
 silvano-contini,Silvano  Contini,1958,,,Italy
-libardo-nino-corredor,Libardo  Niño,1968,71.6,182.0,Colombia
+libardo-nino-corredor,Libardo  Niño,1968,68.2,182.0,Colombia
 oscar-sevilla,Óscar  Sevilla,1976,62.0,175.0,Spain
 miguel-angel-benito,Miguel Ángel  Benito,1993,67.0,181.0,Spain
 neil-stephens,Neil  Stephens,1963,65.0,171.0,Australia
@@ -3895,7 +3895,7 @@ rudi-dexters,Rudi  Dexters,1959,,,Belgium
 ruben-gorospe,Ruben  Gorospe,1964,,,Spain
 victor-langellotti,Victor  Langellotti,1995,64.0,177.0,Monaco
 robert-gesink,Robert  Gesink,1986,70.0,190.0,Netherlands
-joan-bou,Joan  Bou,1997,71.6,182.0,Spain
+joan-bou,Joan  Bou,1997,68.2,182.0,Spain
 rudy-patry,Rudy  Patry,1961,,,Belgium
 aitor-osa,Aitor  Osa,1973,64.0,176.0,Spain
 willy-lienhard,Willy  Lienhard,1954,,,Switzerland
@@ -3966,9 +3966,9 @@ lance-armstrong,Lance  Armstrong,1971,72.0,178.0,United States
 stefano-giraldi,Stefano  Giraldi,1968,,,Italy
 gianfranco-foresti,Gianfranco  Foresti,1950,,,Italy
 frank-francken,Frank  Francken,1964,,,Belgium
-wladimiro-panizza,Wladimiro  Panizza,1945,52.8,157.0,Italy
+wladimiro-panizza,Wladimiro  Panizza,1945,53.6,157.0,Italy
 pius-schwarzentruber,Pius  Schwarzentruber,1965,,,Switzerland
-enekoitz-azparren-irurzun,Enekoitz  Azparren,2002,72.4,180.0,Spain
+enekoitz-azparren-irurzun,Enekoitz  Azparren,2002,69.8,180.0,Spain
 marc-steels,Marc  Steels,1953,,,Belgium
 ruben-oarbeaskoa-ispizua,Rubén  Oarbeaskoa,1975,,,Spain
 herculano-ferreira-de-oliveira,Herculano  Ferreira de Oliveira,1946,,,Portugal
@@ -4004,7 +4004,7 @@ herve-vermeeren,Hervé  Vermeeren,1947,,,Belgium
 franky-pattyn,Franky  Pattyn,1963,,,Belgium
 pieter-weening,Pieter  Weening,1981,68.0,186.0,Netherlands
 jan-kuyckx,Jan  Kuyckx,1979,68.0,177.0,Belgium
-lukas-nerurkar,Lukas  Nerurkar,2003,64.2,177.0,Great Britain
+lukas-nerurkar,Lukas  Nerurkar,2003,65.6,177.0,Great Britain
 fernando-orjuela,Fernando  Orjuela,1991,60.0,168.0,Colombia
 corey-sweet,Corey  Sweet,1976,,,Australia
 markel-irizar,Markel  Irizar,1980,73.0,182.0,Spain
@@ -4043,7 +4043,7 @@ andrew-vollmer,Andrew  Vollmer,2000,65.0,183.0,United States
 david-plaza-romero,David  Plaza,1970,68.0,179.0,Spain
 urko-berrade-fernandez,Urko  Berrade,1997,72.0,184.0,Spain
 manuel-lloret-zaragoza,Manuel  Lloret,1981,,,Spain
-emilien-jeanniere,Emilien  Jeannière,1998,68.8,176.0,France
+emilien-jeanniere,Emilien  Jeannière,1998,66.8,176.0,France
 francesco-chicchi,Francesco  Chicchi,1980,76.0,176.0,Italy
 marco-minnaard,Marco  Minnaard,1989,65.0,178.0,Netherlands
 heriberto-uran,Heriberto  Uran,1954,,,Colombia
@@ -4229,7 +4229,7 @@ olivier-perraudeau,Olivier  Perraudeau,1972,,,France
 alexis-guerin,Alexis  Guerin,1992,64.0,176.0,France
 jurgen-van-den-broeck,Jurgen Van den Broeck,1983,69.0,185.0,Belgium
 bekim-leif-christensen,Bekim leif  Christensen,1973,66.0,178.0,Denmark
-william-blume-levy,William  Blume Levy,2001,77.4,192.0,Denmark
+william-blume-levy,William  Blume Levy,2001,75.2,192.0,Denmark
 osvaldo-bettoni,Osvaldo  Bettoni,1952,,,Italy
 kim-kirchen,Kim  Kirchen,1978,68.0,178.0,Luxembourg
 corrado-donadio,Corrado  Donadio,1958,,,Italy
@@ -4371,7 +4371,7 @@ valter-bonca,Valter  Bonča,1968,63.0,172.0,Slovenia
 fumiyuki-beppu,Fumiyuki  Beppu,1983,69.0,180.0,Japan
 juan-pablo-valencia,Juan Pablo  Valencia,1988,71.0,178.0,Colombia
 mathieu-halleguen,Mathieu  Halleguen,1988,67.0,181.0,France
-bart-lemmen,Bart  Lemmen,1995,72.4,180.0,Netherlands
+bart-lemmen,Bart  Lemmen,1995,69.8,180.0,Netherlands
 martijn-budding,Martijn  Budding,1995,74.0,187.0,Netherlands
 cedric-rossier,Cédric  Rossier,1957,,,Switzerland
 alex-turrin,Alex  Turrin,1992,,,Italy
@@ -4431,7 +4431,7 @@ lenny-martinez,Lenny  Martinez,2003,52.0,168.0,France
 jaak-de-boever,Jaak De Boever,1937,,,Belgium
 roman-kireyev,Roman  Kireyev,1987,66.0,177.0,Kazakhstan
 boris-shpilevsky,Boris  Shpilevsky,1982,78.0,183.0,Russia
-vladislav-kulikov,Vladislav  Kulikov,1996,74.6,190.0,Russia
+vladislav-kulikov,Vladislav  Kulikov,1996,76.6,190.0,Russia
 eugene-plet,Eugène  Plet,1952,,,France
 tim-van-dijke,Tim van Dijke,2000,74.0,189.0,Netherlands
 jean-francois-pescheux,Jean-François  Pescheux,1952,,,France
@@ -4545,7 +4545,7 @@ jose-roberto-sierra-aguerro,José Roberto  Sierra,1967,,,Spain
 stephen-cummings,Steve  Cummings,1981,73.0,190.0,Great Britain
 fabio-van-den-bossche,Fabio Van den Bossche,2000,63.0,176.0,Belgium
 thierry-de-groote,Thierry De Groote,1975,71.0,180.0,Belgium
-nickolas-zukowsky,Nickolas  Zukowsky,1998,74.4,188.0,Canada
+nickolas-zukowsky,Nickolas  Zukowsky,1998,76.4,188.0,Canada
 luca-gelfi,Luca  Gelfi,1966,,,Italy
 rene-haselbacher,René  Haselbacher,1977,69.0,181.0,Austria
 guillaume-le-floch,Guillaume Le Floch,1985,67.0,180.0,France
@@ -4561,7 +4561,7 @@ xabier-usabiaga,Xabier  Usabiaga,1969,,,Spain
 roy-curvers,Roy  Curvers,1979,73.0,188.0,Netherlands
 robert-matwew,Robert  Matwew,1967,,,Germany
 jan-poppe,Jan  Poppe,1970,,,Belgium
-rik-van-ijzendoorn,Rik van IJzendoorn,1987,68.8,176.0,Netherlands
+rik-van-ijzendoorn,Rik van IJzendoorn,1987,66.8,176.0,Netherlands
 sasa-gajicic,Saša  Gajičić,1977,,,Serbia
 gage-hecht,Gage  Hecht,1998,72.0,180.0,United States
 jose-serste,José  Sersté,1943,,,Belgium
@@ -4622,7 +4622,7 @@ dylan-van-baarle,Dylan van Baarle,1992,78.0,189.0,Netherlands
 johannes-draaijer,Johannes  Draaijer,1963,,,Netherlands
 cipriano-chemello,Cipriano  Chemello,1945,,,Italy
 jose-luis-diaz,Jose Luis  Diaz,1965,,,Spain
-jose-de-cauwer,José De Cauwer,1949,63.6,173.0,Belgium
+jose-de-cauwer,José De Cauwer,1949,62.6,173.0,Belgium
 nazzareno-berto,Nazzareno  Berto,1957,,,Italy
 jerome-pineau,Jérôme  Pineau,1980,65.0,176.0,France
 igor-boev,Igor  Boev,1989,74.0,186.0,Russia
@@ -4674,14 +4674,14 @@ tomasz-kiendys,Tomasz  Kiendyś,1977,78.0,185.0,Poland
 patrick-versluys,Patrick  Versluys,1958,,,Belgium
 henri-abadie,Henri  Abadie,1963,,,France
 dominique-cornu,Dominique  Cornu,1985,78.0,197.0,Belgium
-mathieu-hermans,Mathieu  Hermans,1963,62.6,172.0,Netherlands
+mathieu-hermans,Mathieu  Hermans,1963,62.8,172.0,Netherlands
 matteo-montaguti,Matteo  Montaguti,1984,65.0,181.0,Italy
 jimmy-janssens,Jimmy  Janssens,1989,74.0,183.0,Belgium
 bert-hiemstra,Bert  Hiemstra,1973,,,Netherlands
 joeri-calleeuw,Joeri  Calleeuw,1985,71.0,183.0,Belgium
 marc-goos,Marc  Goos,1990,65.0,178.0,Netherlands
 leon-heinschke,Leon  Heinschke,1999,70.0,180.0,Germany
-stephen-bassett,Stephen  Bassett,1995,77.6,191.0,United States
+stephen-bassett,Stephen  Bassett,1995,78.4,191.0,United States
 luciano-rossignoli,Luciano  Rossignoli,1951,,,Italy
 jean-francois-anti,Jean-francois  Anti,1971,,,France
 pierre-luc-perichon,Pierre-Luc  Périchon,1987,69.0,182.0,France
@@ -4734,14 +4734,14 @@ michel-balbuena,Michel  Balbuena,1954,,,France
 luca-ascani,Luca  Ascani,1983,75.0,187.0,Italy
 roberto-heras,Roberto  Heras,1974,59.0,172.0,Spain
 patrick-hendrikx,Patrick  Hendrikx,1964,,,Belgium
-nigel-ellsay,Nigel  Ellsay,1994,73.6,183.0,Canada
+nigel-ellsay,Nigel  Ellsay,1994,70.4,183.0,Canada
 willy-teirlinck,Willy  Teirlinck,1948,,,Belgium
 arman-kamyshev,Arman  Kamyshev,1991,67.0,182.0,Kazakhstan
 michele-coppolillo,Michele  Coppolillo,1967,,,Italy
 tom-dumoulin,Tom  Dumoulin,1990,69.0,185.0,Netherlands
 armando-lora,Armando  Lora,1951,,,Italy
 harry-tanfield,Harry  Tanfield,1994,79.5,190.0,Great Britain
-jan-sommer,Jan  Sommer,2000,73.8,185.0,Switzerland
+jan-sommer,Jan  Sommer,2000,72.6,185.0,Switzerland
 angel-edo,Ángel  Edo,1970,64.0,172.0,Spain
 gregor-gazvoda,Gregor  Gazvoda,1981,72.0,187.0,Slovenia
 johnny-van-cadsand,Johnny Van Cadsand,1972,,,Netherlands
@@ -4846,7 +4846,7 @@ john-gadret,John  Gadret,1979,58.0,170.0,France
 patrick-jacobs,Patrick  Jacobs,1962,,,Belgium
 julio-alberto-rubiano,Julio Alberto  Rubiano,1953,,,Colombia
 jesus-suarez-cueva,Jesús  Suárez,1955,,,Spain
-romain-gioux,Romain  Gioux,1986,53.8,160.0,France
+romain-gioux,Romain  Gioux,1986,56.2,160.0,France
 ken-hashikawa,Ken  Hashikawa,1970,,,Japan
 barry-markus,Barry  Markus,1991,75.0,179.0,Netherlands
 rolf-jaermann,Rolf  Järmann,1966,73.0,182.0,Switzerland
@@ -4946,7 +4946,7 @@ bernard-van-der-linde,Bernard Van Der Linde,1946,,,France
 nathan-o-neill,Nathan  O'Neill,1974,72.0,177.0,Australia
 gianluca-bortolami,Gianluca  Bortolami,1968,73.0,181.0,Italy
 pedro-luis-garcia-velasco,Pedro Luis  Garcia,1966,,,Spain
-luca-rastelli,Luca  Rastelli,1999,62.6,175.0,Italy
+luca-rastelli,Luca  Rastelli,1999,65.4,175.0,Italy
 damien-gaudin,Damien  Gaudin,1986,85.0,190.0,France
 jean-marc-bideau,Jean-Marc  Bideau,1984,73.0,192.0,France
 luc-leblanc,Luc  Leblanc,1966,,,France
@@ -5065,7 +5065,7 @@ pascal-chanteur,Pascal  Chanteur,1968,62.0,172.0,France
 marc-fournier,Marc  Fournier,1994,71.0,183.0,France
 salvador-jarque,Salvador  Jarque,1957,,,Spain
 remmert-wielinga,Remmert  Wielinga,1978,68.0,181.0,Netherlands
-gian-friesecke,Gian  Friesecke,1994,74.6,190.0,Switzerland
+gian-friesecke,Gian  Friesecke,1994,76.6,190.0,Switzerland
 ryder-hesjedal,Ryder  Hesjedal,1980,73.0,187.0,Canada
 simone-stortoni,Simone  Stortoni,1985,59.0,169.0,Italy
 alain-dithurbide,Alain  Dithurbide,1959,,,France
@@ -5091,7 +5091,7 @@ laurens-de-plus,Laurens De Plus,1995,67.0,190.0,Belgium
 mario-anni,Mario  Anni,1943,,,Italy
 rasmus-tiller,Rasmus  Tiller,1996,84.0,187.0,Norway
 wim-myngheer,Wim  Myngheer,1955,,,Belgium
-lucien-aimar,Lucien  Aimar,1941,62.0,170.0,France
+lucien-aimar,Lucien  Aimar,1941,61.2,170.0,France
 nicolaj-bo-larsen,Nicolaj Bo  Larsen,1971,,,Denmark
 jose-cayetano-julia,José Cayetano  Juliá,1979,,,Spain
 nathan-vandepitte,Nathan  Vandepitte,2000,80.0,192.0,France
@@ -5154,7 +5154,7 @@ phil-anderson,Phil  Anderson,1958,,,Australia
 bernt-johansson,Bernt  Johansson,1953,71.0,176.0,Sweden
 slawomir-kohut,Sławomir  Kohut,1977,65.0,176.0,Poland
 antonio-londono,Antonio  Londoño,1955,,,Colombia
-alan-jousseaume,Alan  Jousseaume,1998,64.2,177.0,France
+alan-jousseaume,Alan  Jousseaume,1998,65.6,177.0,France
 benoit-cosnefroy,Benoît  Cosnefroy,1995,65.0,180.0,France
 steffen-radochla,Steffen  Radochla,1978,70.0,173.0,Germany
 eric-serlet,Eric  Serlet,1950,,,Belgium
@@ -5261,7 +5261,7 @@ humberto-parra,Humberto  Parra,1964,,,Colombia
 jean-marc-manfrin,Jean-Marc  Manfrin,1963,,,France
 rolando-ovando,Rolando  Ovando,1963,66.0,168.0,Guatemala
 jesus-ignacio-ibanez,Jesus Ignacio  Ibañez,1960,,,Spain
-filippo-savini,Filippo  Savini,1985,66.2,178.0,Italy
+filippo-savini,Filippo  Savini,1985,64.8,178.0,Italy
 georgi-petrov-georgiev,Georgi  Petrov Georgiev,1985,,,Bulgaria
 roberto-ceruti,Roberto  Ceruti,1953,,,Italy
 karel-vereecke,Karel  Vereecke,1976,,,Belgium
@@ -5409,7 +5409,7 @@ nate-reiss,Nate  Reiss,1963,,,United States
 daniele-ratto,Daniele  Ratto,1989,74.0,180.0,Italy
 ethan-vernon,Ethan  Vernon,2000,74.0,188.0,Great Britain
 jose-azevedo-goncalves,José Silva Gonçalves  Azevedo,1940,,,Portugal
-colin-joyce,Colin  Joyce,1994,66.2,178.0,United States
+colin-joyce,Colin  Joyce,1994,64.8,178.0,United States
 alessandro-romio,Alessandro  Romio,1974,,,Italy
 luciano-boffo,Luciano  Boffo,1962,,,Italy
 hugues-grondin,Hugues  Grondin,1959,,,France
@@ -5454,7 +5454,7 @@ miguel-armando-ubeto,Miguel Armando  Ubeto,1976,60.0,168.0,Venezuela
 valerio-conti,Valerio  Conti,1993,61.0,172.0,Italy
 mirko-puglioli,Mirko  Puglioli,1973,,,Italy
 soren-waerenskjold,Søren  Wærenskjold,2000,92.0,195.0,Norway
-anders-skaarseth,Anders  Skaarseth,1995,73.8,186.0,Norway
+anders-skaarseth,Anders  Skaarseth,1995,73.4,186.0,Norway
 adrien-boichis,Adrien  Boichis,2003,,,France
 zenon-jaskula,Zenon  Jaskuła,1962,76.0,183.0,Poland
 david-per,David  Per,1995,81.0,192.0,Slovenia
@@ -5538,7 +5538,7 @@ jacek-bodyk,Jacek  Bodyk,1966,,,Poland
 jeremy-lecroq,Jérémy  Lecroq,1995,70.0,189.0,France
 tomaz-nose,Tomaž  Nose,1982,,,Slovenia
 jose-patrocinio-jimenez,José Patrocinio  Jiménez,1953,,,Colombia
-walter-calzoni,Walter  Calzoni,2001,62.6,172.0,Italy
+walter-calzoni,Walter  Calzoni,2001,62.8,172.0,Italy
 gaizka-lasa-larraya,Gaizka  Lasa,1982,,,Spain
 magno-prado,Magno  Nazaret,1986,65.0,172.0,Brazil
 alessandro-tonelli,Alessandro  Tonelli,1992,64.0,176.0,Italy
@@ -5550,7 +5550,7 @@ junichi-kikuta,Junichi  Kikuta,1966,,,Japan
 francisco-codony,Francisco  Codony,1955,,,Spain
 oleg-chuzhda,Oleg  Chuzhda,1985,,,Ukraine
 diego-rubio,Diego  Rubio,1991,81.0,191.0,Spain
-marek-lesniewski,Marek  Lesniewski,1963,73.8,185.0,Poland
+marek-lesniewski,Marek  Lesniewski,1963,72.6,185.0,Poland
 bernard-croyet,Bernard  Croyet,1948,,,France
 nick-gates,Nick  Gates,1972,71.0,183.0,Australia
 robert-wagner,Robert  Wagner,1983,75.0,186.0,Germany
@@ -5615,7 +5615,7 @@ daniel-girard,Daniel  Girard,1956,,,Switzerland
 paul-martens,Paul  Martens,1983,69.0,178.0,Germany
 giuseppe-milioli,Giuseppe  Milioli,1945,,,Italy
 michael-carbel,Michael  Carbel,1995,73.0,180.0,Denmark
-yannis-voisard,Yannis  Voisard,1998,56.0,171.0,Switzerland
+yannis-voisard,Yannis  Voisard,1998,56.0,171.8,Switzerland
 paidi-o-brien,Paídi  O'Brien,1984,,,Ireland
 juan-carlos-arribas,Juan Carlos  Arribas,1966,,,Spain
 enrico-poitschke,Enrico  Poitschke,1969,73.0,179.0,Germany
@@ -5718,7 +5718,7 @@ stijn-ennekens,Stijn  Ennekens,1984,,,Belgium
 manuel-martinez-1,Manuel  Martinez,1967,,,Spain
 roger-blockx,Roger  Blockx,1943,,,Belgium
 yonathan-monsalve,Yonathan  Monsalve,1989,62.0,176.0,Venezuela
-jean-nuttli,Jean  Nüttli,1974,70.0,178.6,Switzerland
+jean-nuttli,Jean  Nüttli,1974,70.0,180.6,Switzerland
 domenico-passuello,Domenico  Passuello,1978,,,Italy
 rob-goris,Rob  Goris,1982,87.0,184.0,Belgium
 serge-beucherie,Serge  Beucherie,1955,,,France
@@ -5798,7 +5798,7 @@ gorka-verdugo,Gorka  Verdugo,1978,71.0,181.0,Spain
 mario-aparicio-munoz,Mario  Aparicio,2000,69.0,185.0,Spain
 eddy-bouwmans,Eddy  Bouwmans,1968,,,Netherlands
 manuel-anton,Manuel Ángel  Antón,1966,,,Spain
-matheo-vercher,Mattéo  Vercher,2001,60.0,171.0,France
+matheo-vercher,Mattéo  Vercher,2001,61.4,171.0,France
 alexandre-delettre,Alexandre  Delettre,1997,62.0,170.0,France
 eric-de-vlaeminck,Eric De Vlaeminck,1945,,,Belgium
 juan-fuentes,Juan Manuel  Fuentes,1977,,,Spain
@@ -5993,7 +5993,7 @@ fabio-mazzucco,Fabio  Mazzucco,1999,69.0,183.0,Italy
 leonardo-sierra,Leonardo  Sierra,1968,,,Venezuela
 rafael-nuritdinov,Rafael  Nuritdinov,1977,68.0,180.0,Uzbekistan
 said-haddou,Saïd  Haddou,1982,80.0,190.0,France
-erik-nordsaeter-resell,Erik Nordsæter  Resell,1996,77.4,192.0,Norway
+erik-nordsaeter-resell,Erik Nordsæter  Resell,1996,75.2,192.0,Norway
 carlos-zarate,Carlos  Zárate,1980,68.0,180.0,Spain
 jose-enrique-cima-prado,José Enrique  Cima,1952,,,Spain
 carlos-castano-panadero,Carlos  Castaño,1979,,,Spain
@@ -6023,7 +6023,7 @@ kalle-kriit,Kalle  Kriit,1983,63.0,181.0,Estonia
 juan-santiago-zurano,Juan Santiago  Zurano,1948,,,Spain
 federico-morini,Federico  Morini,1976,,,Italy
 oscar-pereiro,Óscar  Pereiro,1977,67.0,177.0,Spain
-carlos-galarreta,Carlos  Galarreta,1967,67.4,174.0,Spain
+carlos-galarreta,Carlos  Galarreta,1967,66.2,174.0,Spain
 domen-novak,Domen  Novak,1995,70.0,181.0,Slovenia
 tom-veelers,Tom  Veelers,1984,75.0,184.0,Netherlands
 tomasz-marczynski,Tomasz  Marczyński,1984,70.0,180.0,Poland
@@ -6048,7 +6048,7 @@ alessandro-donati,Alessandro  Donati,1979,71.0,186.0,Italy
 ruggero-gialdini,Ruggero  Gialdini,1950,,,Italy
 herve-duclos-lassalle,Hervé  Duclos-Lassalle,1979,63.0,174.0,France
 erwin-biets,Erwin  Biets,1968,,,Belgium
-eric-antonio-fagundez,Eric Antonio  Fagúndez,1998,72.4,180.0,Uruguay
+eric-antonio-fagundez,Eric Antonio  Fagúndez,1998,69.8,180.0,Uruguay
 alessandro-guerra,Alessandro  Guerra,1974,,,Italy
 fernando-pinero,Fernando  Piñero,1967,,,Spain
 dirk-baert,Dirk  Baert,1949,,,Belgium
@@ -6084,7 +6084,7 @@ kim-heiduk,Kim  Heiduk,2000,70.0,184.0,Germany
 jacob-hindsgaul-madsen,Jacob  Hindsgaul,2000,67.0,190.0,Denmark
 savva-novikov,Savva  Novikov,1999,65.0,177.0,Russia
 francisque-teyssier,Francisque  Teyssier,1969,,,France
-henri-vandenabeele,Henri  Vandenabeele,2000,63.6,181.0,Belgium
+henri-vandenabeele,Henri  Vandenabeele,2000,67.8,181.0,Belgium
 santos-gonzalez,Santos  González,1973,70.0,179.0,Spain
 johannes-adamietz,Johannes  Adamietz,1998,61.0,174.0,Germany
 hendrik-van-dyck,Hendrik Van Dyck,1974,,,Belgium
