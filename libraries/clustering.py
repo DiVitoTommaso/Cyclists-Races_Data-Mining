@@ -1,3 +1,4 @@
+from sklearn.manifold import TSNE
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -156,7 +157,7 @@ def x_means(df):
     return labels, centers
 
 
-def sil_vs_coh(df, labels_list, x_values):
+def sil_vs_coh(df, labels_list, x_values, x_name="Number of Clusters (K)"):
     sils = []
     coh = []
     for labels in labels_list:
@@ -180,18 +181,18 @@ def sil_vs_coh(df, labels_list, x_values):
     plt.figure(figsize=(10, 6))
 
     # Plot silhouette scores
-    plt.plot(x_values, sils, marker='o', linestyle='-', color='b', label='Silhouette Score')
+    plt.plot(x_values, sils, marker='o', color='b', label='Silhouette Score')
     plt.title("Silhouette Score")
-    plt.xlabel("Number of Clusters (K)")
+    plt.xlabel(x_name)
     plt.ylabel("Metric Value")
     plt.show()
     # Plot cohesion values (su un asse separato per scalare i valori)
     plt.figure(figsize=(10, 6))
-    plt.plot(x_values, coh, marker='x', linestyle='--', color='r', label='Cohesion')
+    plt.plot(x_values, coh, marker='o', color='r', label='Cohesion')
 
     # 4. Personalizzazione del grafico
     plt.title("Cohesion across Clusters")
-    plt.xlabel("Number of Clusters (K)")
+    plt.xlabel(x_name)
     plt.ylabel("Metric Value")
     plt.legend()  # Mostra legenda
     plt.grid(True)  # Aggiunge la griglia
@@ -200,3 +201,146 @@ def sil_vs_coh(df, labels_list, x_values):
     plt.show()
 
     return sils, coh
+
+
+from sklearn.cluster import KMeans
+from math import pi
+
+def plot_centers(df, centers, n_rows=4, n_cols=3):
+    # First part: Line plot for cluster centers
+    plt.figure(figsize=(8, 4))
+    for i in range(len(centers)):
+        plt.plot(centers.iloc[i], marker='o', label='Cluster %s' % i)
+    plt.tick_params(axis='both', which='major', labelsize=10)
+    plt.xticks(range(0, len(df.columns)), df.columns, fontsize=8)
+    plt.legend(fontsize=10)
+    plt.title("Cluster Centers (Line Plot)", fontsize=12)
+    plt.show()
+
+    N = len(df.columns)  # Number of features
+    num_clusters = len(centers)
+
+    # Set up the figure and subplots
+    fig, axes = plt.subplots(n_rows, n_cols, subplot_kw={'projection': 'polar'}, figsize=(6 * n_cols, 6 * n_rows))
+
+    # Flatten axes to easily index them if the grid is not square
+    axes = axes.flatten()
+
+    # If there are more clusters than available subplots, adjust the number of subplots dynamically
+    for i in range(num_clusters):
+        ax = axes[i]
+
+        # Calculate the angles for the radar chart
+        angles = [n / float(N) * 2 * pi for n in range(N)]  # Angle for each feature
+        values = centers.iloc[i].tolist()  # Cluster center values
+        values += values[:1]  # Ensure the plot is closed by repeating the first value at the end
+        angles += angles[:1]  # Repeat the first angle to close the radar chart
+
+        ax.set_theta_offset(pi / 2)  # Rotate the chart
+        ax.set_theta_direction(-1)  # Clockwise direction
+        ax.set_rlabel_position(0)  # Remove radial labels
+        ax.plot(angles, values, linewidth=1, linestyle='solid', label=f'Cluster {i}')
+        ax.fill(angles, values, 'b', alpha=0.1)  # Fill the area
+        ax.set_xticks(angles[:-1])  # Set the feature names as ticks
+        ax.set_xticklabels(df.columns, fontsize=8)
+        ax.set_title(f'Cluster {i} - Radar Plot', fontsize=10)
+        ax.legend(fontsize=8)
+
+    # Adjust layout
+    plt.tight_layout()
+    plt.show()
+
+def plot_scores(df):
+    cohesion = []
+    silhouette_scores = []
+    results = []
+    # Run KMeans for different values of K
+    for k in range(2, 100):
+        kmeans = KMeans(n_clusters=k, random_state=1804, n_init=10)
+        kmeans.fit(df)
+
+        # Calculate cohesion (inertia)
+        cohesion.append(kmeans.inertia_)
+
+        # Calculate silhouette score
+        silhouette = silhouette_score(df, kmeans.labels_)
+        silhouette_scores.append(silhouette)
+
+        results.append(kmeans)
+
+    # Plot Cohesion (Inertia) vs K
+    plt.figure(figsize=(12, 5))
+
+    plt.subplot(1, 2, 1)
+    plt.plot(list(range(2,100)), cohesion, 'bo-')
+    plt.xlabel('Number of Clusters (K)')
+    plt.ylabel('Cohesion (Inertia)')
+    plt.title('Elbow Method for Optimal K')
+
+    # Plot Silhouette Score vs K
+    plt.subplot(1, 2, 2)
+    plt.plot(list(range(2,100)), silhouette_scores, 'ro-')
+    plt.xlabel('Number of Clusters (K)')
+    plt.ylabel('Silhouette Score')
+    plt.title('Silhouette Score for Optimal K')
+
+    plt.tight_layout()
+    plt.show()
+
+    return results
+
+def optimal_pair_plot(df, cluster_name, labels):
+    df[cluster_name] = labels
+
+    pairplot = sns.pairplot(df, hue=cluster_name, palette='husl', diag_kind='kde')
+    plt.suptitle("KMeans Clustering Pairplot", y=1.02)
+
+    df.drop(columns=[cluster_name], inplace=True)
+
+
+# Step 2: Apply PCA
+def apply_pca(data, dimensions=2):
+    pca = PCA(n_components=dimensions)
+    return pca.fit_transform(data)
+
+# Step 3: Apply t-SNE
+def apply_tsne(data, dimensions=2):
+    tsne = TSNE(n_components=dimensions, random_state=42)
+    return tsne.fit_transform(data)
+
+# Step 4: Plot PCA and t-SNE results
+def plot_results(embedding, labels, title, dimensions=2):
+    plt.figure(figsize=(8, 6))
+    unique_labels = np.unique(labels)
+    colors = sns.color_palette("hsv", len(unique_labels))
+
+    if dimensions == 2:
+        for i, label in enumerate(unique_labels):
+            plt.scatter(
+                embedding[np.array(labels) == label, 0],
+                embedding[np.array(labels) == label, 1],
+                label=f"Cluster {label}",
+                color=colors[i],
+                alpha=0.7
+            )
+        plt.xlabel("Component 1")
+        plt.ylabel("Component 2")
+    elif dimensions == 3:
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection="3d")
+        for i, label in enumerate(unique_labels):
+            ax.scatter(
+                embedding[np.array(labels) == label, 0],
+                embedding[np.array(labels) == label, 1],
+                embedding[np.array(labels) == label, 2],
+                label=f"Cluster {label}",
+                color=colors[i],
+                alpha=0.7
+            )
+        ax.set_xlabel("Component 1")
+        ax.set_ylabel("Component 2")
+        ax.set_zlabel("Component 3")
+
+    plt.title(title)
+    plt.legend()
+    plt.show()
