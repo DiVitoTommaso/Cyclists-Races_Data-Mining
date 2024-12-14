@@ -1,5 +1,8 @@
+from scipy.sparse import csgraph
 from sklearn.manifold import TSNE
 from sklearn.metrics import silhouette_score
+from sklearn.metrics.pairwise import rbf_kernel
+from sklearn.neighbors import kneighbors_graph
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 import pandas as pd
@@ -7,7 +10,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, OPTICS, DBSCAN
 import math
 import lz4.frame
 import pickle
@@ -160,48 +163,55 @@ def x_means(df):
 def sil_vs_coh(df, labels_list, x_values, x_name="Number of Clusters (K)"):
     sils = []
     coh = []
+
     for labels in labels_list:
-        sils.append(silhouette_score(df, labels))
+        # Filter out noise points (labels == -1)
+        valid_indices = labels != -1
+        filtered_df = df[valid_indices]
+        filtered_labels = labels[valid_indices]
 
+        # Check if valid clusters remain
+        if len(np.unique(filtered_labels)) > 1:  # Silhouette requires at least 2 clusters
+            sils.append(silhouette_score(filtered_df, filtered_labels))
+        else:
+            sils.append(0)  # Assign 0 if not enough clusters
+
+        # Cohesion calculation
         cohesion = 0
-        for cluster_id in np.unique(labels):
-            # Get the points in the current cluster
-            cluster_points = df[labels == cluster_id]
+        for cluster_id in np.unique(filtered_labels):
+            # Get points in the current cluster
+            cluster_points = filtered_df[filtered_labels == cluster_id]
 
-            # Calculate the centroid of the cluster (mean of points)
+            # Calculate the centroid
             centroid = np.mean(cluster_points, axis=0)
 
-            # Calculate the squared distances from each point to the centroid
+            # Squared distances from points to the centroid
             distances = np.sum((cluster_points - centroid) ** 2, axis=1)
-
-            # Add to the total cohesion
             cohesion += np.sum(distances)
+
         coh.append(cohesion)
 
-    plt.figure(figsize=(10, 6))
-
     # Plot silhouette scores
+    plt.figure(figsize=(10, 6))
     plt.plot(x_values, sils, marker='o', color='b', label='Silhouette Score')
     plt.title("Silhouette Score")
     plt.xlabel(x_name)
     plt.ylabel("Metric Value")
+    plt.grid(True)
+    plt.legend()
     plt.show()
-    # Plot cohesion values (su un asse separato per scalare i valori)
+
+    # Plot cohesion values
     plt.figure(figsize=(10, 6))
     plt.plot(x_values, coh, marker='o', color='r', label='Cohesion')
-
-    # 4. Personalizzazione del grafico
     plt.title("Cohesion across Clusters")
     plt.xlabel(x_name)
     plt.ylabel("Metric Value")
-    plt.legend()  # Mostra legenda
-    plt.grid(True)  # Aggiunge la griglia
-
-    # 5. Visualizzazione del grafico
+    plt.grid(True)
+    plt.legend()
     plt.show()
 
     return sils, coh
-
 
 from sklearn.cluster import KMeans
 from math import pi
@@ -344,3 +354,79 @@ def plot_results(embedding, labels, title, dimensions=2):
     plt.title(title)
     plt.legend()
     plt.show()
+
+
+def spectral_eigen_gap(df):
+    sigma = np.median(np.linalg.norm(df[:, np.newaxis] - df, axis=2))  # Stima di sigma
+    affinity_matrix = rbf_kernel(df, gamma=1.0 / (2 * sigma ** 2))
+
+    # 3. Calcola la matrice Laplaciana normalizzata
+    laplacian_matrix = csgraph.laplacian(affinity_matrix, normed=True)
+
+    # 4. Calcola gli autovalori e autovettori della matrice Laplaciana
+    eigenvalues, eigenvectors = np.linalg.eigh(laplacian_matrix)
+
+    # 5. Calcola il "gap" tra autovalori consecutivi
+    eigengaps = np.diff(eigenvalues)
+
+    # 6. Trova automaticamente il numero ottimale di cluster
+    optimal_clusters = np.argmax(eigengaps) + 1  # Indice del salto + 1
+
+    # 7. Visualizza gli autovalori e l'eigengap
+    plt.figure(figsize=(10, 5))
+    plt.plot(range(1, len(eigenvalues) + 1), eigenvalues, 'bo-', markersize=5, label='Autovalori')
+    plt.axvline(optimal_clusters, color='r', linestyle='--', label=f"Numero di cluster = {optimal_clusters}")
+    plt.xlabel("Indice dell'autovalore")
+    plt.ylabel("Autovalore")
+    plt.title("Autovalori della matrice Laplaciana (Eigengap Heuristic)")
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+def dbscan_tune(df, dst_matrix, eps_range):
+    dbscan_labels = []
+    data = pd.DataFrame({'eps': [], 'Clusters': [], 'Noise': []})
+    for eps in eps_range:
+        dbscan = DBSCAN(eps=eps, min_samples=pow(2, df.shape[1]), metric="precomputed", n_jobs=-1)
+        dbscan.fit_predict(dst_matrix)
+
+        unique_labels, counts = np.unique(dbscan.labels_, return_counts=True)
+
+        n_clusters = len(unique_labels[unique_labels != -1])  # Exclude noise (-1) as a cluster
+        n_noise = counts[unique_labels == -1][0] if -1 in unique_labels else 0
+
+        new_row = {'eps': eps, 'Clusters': n_clusters, 'Noise': n_noise}
+        data = pd.concat([data, pd.DataFrame([new_row])], ignore_index=True)
+
+        dbscan_labels.append(dbscan.labels_)
+
+    print(data)
+    sil_vs_coh(df, dbscan_labels, eps_range, x_name='eps')
+
+def optics_tune(df, eps_range):
+    optics_labels = []
+    results = pd.DataFrame({'eps': [], 'Clusters': [], 'Noise': []})  # Results table
+
+    # Loop over different max_eps values to tune OPTICS
+    for eps in eps_range:
+        # Run OPTICS with specified max_eps
+        optics = OPTICS(max_eps=eps, min_samples=df.shape[1]*2, metric='euclidean')
+        optics.fit(df.values)
+
+        # Get labels and noise points
+        labels = optics.labels_
+        n_clusters = len(set(labels)) - (1 if -1 in labels else 0)  # Exclude noise (-1)
+        n_noise = np.sum(labels == -1)
+
+        # Append metrics to the results DataFrame
+        new_row = {'eps': eps, 'Clusters': n_clusters, 'Noise': n_noise}
+        results = pd.concat([results, pd.DataFrame([new_row])], ignore_index=True)
+
+        optics_labels.append(labels)
+
+    # Print results table
+    print("Results for different eps values:")
+    print(results)
+
+    # Evaluate silhouette and cohesion metrics
+    sil_vs_coh(df, optics_labels, eps_range)
