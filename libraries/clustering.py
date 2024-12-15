@@ -19,6 +19,7 @@ from scipy.spatial.distance import pdist
 import gower
 import os
 from scipy.spatial.distance import squareform
+from sklearn.metrics import pairwise_distances
 
 
 # Define the transform function
@@ -299,12 +300,24 @@ def plot_scores(df):
 
     return results
 
-def optimal_pair_plot(df, cluster_name, labels):
+def optimal_pair_plot(df, cluster_name, labels, centroids=None):
+    # Add the cluster labels to the DataFrame
     df[cluster_name] = labels
 
+    # Create the pairplot with seaborn
     pairplot = sns.pairplot(df, hue=cluster_name, palette='husl', diag_kind='kde')
-    plt.suptitle("KMeans Clustering Pairplot", y=1.02)
 
+    if centroids is not None:
+        # Add centroids to each plot in the pairplot
+        for i, ax in enumerate(pairplot.axes.flatten()):
+            if centroids.shape[1] == 2:  # Handle 2D data
+                ax.scatter(centroids[:, 0], centroids[:, 1], c='red', marker='X', s=100, label="Centroids")
+            else:  # Handle 1D data
+                ax.scatter(centroids[:, 0], np.zeros_like(centroids[:, 0]), c='red', marker='X', s=100, label="Centroids")
+            ax.legend()
+    plt.show()
+
+    # Remove cluster label column
     df.drop(columns=[cluster_name], inplace=True)
 
 
@@ -430,3 +443,15 @@ def optics_tune(df, eps_range):
 
     # Evaluate silhouette and cohesion metrics
     sil_vs_coh(df, optics_labels, eps_range)
+
+def similarity_matrix(df):
+    distance_matrix = pairwise_distances(df, metric='euclidean')  # Matrice delle distanze
+    sim_matrix = 1 / (1 + distance_matrix)  # Trasforma le distanze in similarità
+
+    # 3. Visualizza la Similarity Matrix come Heatmap
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(sim_matrix, cmap='coolwarm', square=True)
+    plt.title("Similarity Matrix Heatmap")
+    plt.xlabel("Data Points")
+    plt.ylabel("Data Points")
+    plt.show()
