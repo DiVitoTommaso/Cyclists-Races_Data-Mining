@@ -96,14 +96,7 @@ def plot_hc(ax, data_link, method, metric, color_threshold=10, truncate_mode="la
         return
 
     # Plot dendrogram on the specified axis
-    dendrogram(
-        data_link,
-        color_threshold=color_threshold,
-        truncate_mode=truncate_mode,
-        p=p,
-        no_labels=False,
-        ax=ax
-    )
+    dendrogram(data_link,ax=ax)
     ax.set_title(f"Method: {method.capitalize()} | Metric: {metric}", fontsize=12)
     ax.set_xlabel("Data Points")
     ax.set_ylabel("Linkage Distance")
@@ -379,6 +372,8 @@ def spectral_eigen_gap(df):
     # 4. Calcola gli autovalori e autovettori della matrice Laplaciana
     eigenvalues, eigenvectors = np.linalg.eigh(laplacian_matrix)
 
+    # Remove zeros that are always present in laplacian matrix
+    eigenvalues = eigenvalues[np.abs(eigenvalues) > 1e-10]
     # 5. Calcola il "gap" tra autovalori consecutivi
     eigengaps = np.diff(eigenvalues)
 
