@@ -96,14 +96,7 @@ def plot_hc(ax, data_link, method, metric, color_threshold=10, truncate_mode="la
         return
 
     # Plot dendrogram on the specified axis
-    dendrogram(
-        data_link,
-        color_threshold=color_threshold,
-        truncate_mode=truncate_mode,
-        p=p,
-        no_labels=False,
-        ax=ax
-    )
+    dendrogram(data_link,ax=ax)
     ax.set_title(f"Method: {method.capitalize()} | Metric: {metric}", fontsize=12)
     ax.set_xlabel("Data Points")
     ax.set_ylabel("Linkage Distance")
@@ -379,6 +372,8 @@ def spectral_eigen_gap(df):
     # 4. Calcola gli autovalori e autovettori della matrice Laplaciana
     eigenvalues, eigenvectors = np.linalg.eigh(laplacian_matrix)
 
+    # Remove zeros that are always present in laplacian matrix
+    eigenvalues = eigenvalues[np.abs(eigenvalues) > 1e-10]
     # 5. Calcola il "gap" tra autovalori consecutivi
     eigengaps = np.diff(eigenvalues)
 
@@ -444,14 +439,22 @@ def optics_tune(df, eps_range):
     # Evaluate silhouette and cohesion metrics
     sil_vs_coh(df, optics_labels, eps_range)
 
-def similarity_matrix(df):
-    distance_matrix = pairwise_distances(df, metric='euclidean')  # Matrice delle distanze
-    sim_matrix = 1 / (1 + distance_matrix)  # Trasforma le distanze in similarità
+def similarity_matrix(df, labels):
+    labels = np.array(labels)
+    proximity_matrix = pairwise_distances(df, metric='euclidean')
 
-    # 3. Visualizza la Similarity Matrix come Heatmap
+    # 4. Sort data by cluster labels
+    sorted_indices = np.argsort(labels)  # Get indices that would sort the labels
+    sorted_proximity_matrix = proximity_matrix[sorted_indices, :][:, sorted_indices]  # Reorder rows and columns
+    sorted_labels = labels[sorted_indices]
+
+    # 5. Convert to DataFrame for better visualization
+    sorted_df = pd.DataFrame(sorted_proximity_matrix,
+                             index=sorted_labels,
+                             columns=sorted_labels)
+
+    # 6. Plot the sorted proximity matrix
     plt.figure(figsize=(8, 6))
-    sns.heatmap(sim_matrix, cmap='coolwarm', square=True)
-    plt.title("Similarity Matrix Heatmap")
-    plt.xlabel("Data Points")
-    plt.ylabel("Data Points")
+    sns.heatmap(sorted_df, cmap="rainbow", xticklabels=False, yticklabels=False)
+    plt.title("Proximity Matrix Ordered by Cluster Labels")
     plt.show()
