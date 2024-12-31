@@ -293,7 +293,7 @@ def sil_vs_coh(df, labels_list, x_values, x_name="Number of Clusters (K)"):
 
 from sklearn.cluster import KMeans
 from math import pi
-
+import umap
 
 def plot_centers(df, centers, n_rows=4, n_cols=3):
     """
@@ -431,6 +431,18 @@ def optimal_pair_plot(df, cluster_name, labels, centroids=None):
     # Remove the cluster label column after plotting
     df.drop(columns=[cluster_name], inplace=True)
 
+# Step 5: Apply UMAP (Uniform Manifold Approximation and Projection)
+def apply_umap(data, dimensions=2):
+    """
+    Applies UMAP to reduce the dimensionality of the data to the specified number of dimensions.
+
+    :param data: The input data (features) to be transformed
+    :param dimensions: The number of dimensions to reduce the data to (default: 2)
+    :return: The transformed data with reduced dimensions
+    """
+    umap_model = umap.UMAP(n_components=dimensions, random_state=1804)  # Initialize UMAP with the desired number of dimensions
+    return umap_model.fit_transform(data)  # Fit and transform the data
+
 
 # Step 2: Apply PCA (Principal Component Analysis)
 def apply_pca(data, dimensions=2):
@@ -454,7 +466,7 @@ def apply_tsne(data, dimensions=2):
     :param dimensions: The number of dimensions to reduce the data to (default: 2)
     :return: The transformed data with reduced dimensions
     """
-    tsne = TSNE(n_components=dimensions, random_state=42)  # Initialize t-SNE with the desired number of dimensions
+    tsne = TSNE(n_components=dimensions, random_state=1804, n_jobs=-1)  # Initialize t-SNE with the desired number of dimensions
     return tsne.fit_transform(data)  # Fit and transform the data
 
 
@@ -547,7 +559,7 @@ def spectral_eigen_gap(df):
     plt.show()
 
 
-def dbscan_tune(df, dst_matrix, eps_range):
+def dbscan_tune(df, dst_matrix, eps_range, samples):
     """
     Tunes the DBSCAN algorithm over a range of epsilon values to find the best clustering.
 
@@ -561,7 +573,7 @@ def dbscan_tune(df, dst_matrix, eps_range):
 
     # Loop over different epsilon values
     for eps in eps_range:
-        dbscan = DBSCAN(eps=eps, min_samples=pow(2, df.shape[1]), metric="precomputed", n_jobs=-1)
+        dbscan = DBSCAN(eps=eps, min_samples=samples, metric="precomputed", n_jobs=-1)
         dbscan.fit_predict(dst_matrix)  # Apply DBSCAN to the distance matrix
 
         # Get unique cluster labels and their counts
@@ -582,7 +594,7 @@ def dbscan_tune(df, dst_matrix, eps_range):
     sil_vs_coh(df, dbscan_labels, eps_range, x_name='eps')  # Evaluate silhouette and cohesion for DBSCAN
 
 
-def optics_tune(df, eps_range):
+def optics_tune(df, eps_range, samples):
     """
     Tunes the OPTICS (Ordering Points To Identify the Clustering Structure) algorithm
     over a range of epsilon values to find the best clustering.
@@ -596,7 +608,7 @@ def optics_tune(df, eps_range):
 
     # Loop over different epsilon values
     for eps in eps_range:
-        optics = OPTICS(max_eps=eps, min_samples=df.shape[1] * 2, metric='euclidean')
+        optics = OPTICS(max_eps=eps, min_samples=samples, metric='euclidean')
         optics.fit(df.values)  # Apply OPTICS to the data
 
         # Get the labels and count noise points (-1 is the label for noise)
@@ -614,7 +626,7 @@ def optics_tune(df, eps_range):
     print(results)  # Print the results dataframe
 
     # Evaluate silhouette and cohesion for OPTICS
-    sil_vs_coh(df, optics_labels, eps_range)
+    sil_vs_coh(df, optics_labels, eps_range, x_name='max-eps')
 
 
 def similarity_matrix(df, labels):
