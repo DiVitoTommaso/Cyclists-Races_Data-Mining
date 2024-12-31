@@ -4,6 +4,10 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+import os
+
+os.environ["KERAS_BACKEND"] = "torch"
+import keras
 
 
 class ColumnRemoverTransformer(BaseEstimator, TransformerMixin):
@@ -79,7 +83,7 @@ class BMICalculatorTransformer(BaseEstimator, TransformerMixin):
 def get_encoder(onehot_columns):
     return ColumnTransformer(
         transformers=[
-            ("onehot", OneHotEncoder(), onehot_columns),
+            ("onehot", OneHotEncoder(handle_unknown="ignore"), onehot_columns),
         ],
         remainder="passthrough",
         verbose_feature_names_out=False,
@@ -108,7 +112,7 @@ def get_scaler_encoder(columns_to_scale, columns_to_encode):
                 StandardScaler(),
                 columns_to_scale,
             ),
-            ("onehot", OneHotEncoder(), columns_to_encode),
+            ("onehot", OneHotEncoder(handle_unknown="ignore"), columns_to_encode),
         ],
         remainder="passthrough",
         verbose_feature_names_out=False,
@@ -130,3 +134,16 @@ def get_preprocessor_svm(
         remainder="passthrough",
         verbose_feature_names_out=False,
     ).set_output(transform="pandas")
+
+
+def create_model(input_shape):
+    model = keras.models.Sequential(
+        [
+            keras.layers.Input(shape=(input_shape,)),
+            keras.layers.Dense(32, activation="sigmoid"),
+            keras.layers.Dense(1, activation="sigmoid"),
+        ]
+    )
+    opt = keras.optimizers.Adam()
+    model.compile(optimizer=opt, loss="binary_crossentropy")
+    return model
