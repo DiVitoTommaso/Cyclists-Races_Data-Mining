@@ -233,7 +233,7 @@ def x_means(df):
     return labels, centers  # Return cluster labels and centers
 
 
-def sil_vs_coh(df, labels_list, x_values, x_name="Number of Clusters (K)"):
+def sil_vs_coh(df, labels_list, x_values, x_name="Number of Clusters (K)", metric='euclidean'):
     """
     Evaluates clustering performance by calculating silhouette scores and cohesion for different clusterings.
 
@@ -254,7 +254,7 @@ def sil_vs_coh(df, labels_list, x_values, x_name="Number of Clusters (K)"):
 
         # Calculate silhouette score if there are more than 1 cluster
         if len(np.unique(filtered_labels)) > 1:
-            sils.append(silhouette_score(filtered_df, filtered_labels))  # Calculate silhouette score
+            sils.append(silhouette_score(filtered_df, filtered_labels, metric=metric))  # Calculate silhouette score
         else:
             sils.append(0)  # Assign 0 if there are not enough clusters
 
@@ -349,6 +349,41 @@ def plot_centers(df, centers, n_rows=4, n_cols=3):
     plt.show()
 
 
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import linkage
+
+
+def plot_elbow_method(data):
+    """
+    Plots the Elbow Method for 'complete' and 'average' linkages.
+
+    Parameters:
+    - data: ndarray
+        Input data for clustering.
+    """
+    methods = ['complete', 'average']  # Linkage methods to evaluate
+
+    plt.figure(figsize=(12, 6))  # Create a larger plot for side-by-side comparison
+
+    for i, method in enumerate(methods, 1):
+        # Perform hierarchical clustering
+        Z = linkage(data, method=method)
+        distances = Z[:, 2]  # Extract distances
+
+        # Create subplot
+        plt.subplot(1, 2, i)  # 1 row, 2 columns, current subplot index
+        plt.plot(range(1, len(distances) + 1), sorted(distances, reverse=True), marker='o')
+        plt.title(f'Elbow Method ({method.capitalize()} Linkage)')
+        plt.xlabel('Number of merges')
+        plt.ylabel('Distance')
+        plt.grid(True)
+
+    # Adjust layout and display the plot
+    plt.tight_layout()
+    plt.show()
+
+
 def plot_scores(df):
     """
     Plots the Cohesion (Inertia) and Silhouette Score for different values of K (number of clusters).
@@ -399,6 +434,8 @@ def plot_scores(df):
     return results  # Return the list of KMeans models for each K value
 
 
+from collections import Counter
+
 def optimal_pair_plot(df, cluster_name, labels, centroids=None):
     """
     Creates a pairplot showing the relationships between features and color-codes the data points by cluster label.
@@ -409,6 +446,7 @@ def optimal_pair_plot(df, cluster_name, labels, centroids=None):
     :param labels: The cluster labels for each data point
     :param centroids: Optionally provide centroids to plot on the pairplot (default: None)
     """
+
     # Add the cluster labels to the DataFrame
     df[cluster_name] = labels
 
@@ -430,6 +468,23 @@ def optimal_pair_plot(df, cluster_name, labels, centroids=None):
 
     # Remove the cluster label column after plotting
     df.drop(columns=[cluster_name], inplace=True)
+
+    # Create a DataFrame to store results
+    data = pd.DataFrame({'Cluster': list(set(labels))})  # Unique cluster IDs
+    # Count number of points in each cluster
+    data['Count'] = data['Cluster'].map(dict(Counter(labels)))
+
+    centroids = []
+    stds = []
+    for label in set(labels):
+        if label != -1:  # Ignore noise points (-1)
+            cluster_points = df[pd.Series(labels, index=df.index) == label]  # Filter points in the cluster
+            centroids.append(cluster_points.mean(axis=0))  # Centroid of the cluster
+            stds.append(cluster_points.std(axis=0))
+
+    print(data)
+    print(pd.DataFrame(centroids))
+    print(pd.DataFrame(centroids).std().sort_values())
 
 # Step 5: Apply UMAP (Uniform Manifold Approximation and Projection)
 def apply_umap(data, dimensions=2):
