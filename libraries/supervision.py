@@ -147,3 +147,21 @@ def create_model(input_shape):
     opt = keras.optimizers.Adam()
     model.compile(optimizer=opt, loss="binary_crossentropy")
     return model
+
+
+class SklearnKerasClassifier(BaseEstimator):
+    def __init__(self, model):
+        self.model = model
+
+    def fit(self, X, y):
+        return self
+
+    def predict(self, X):
+        return (self.model.predict(X, verbose=0).flatten() > 0.5).astype(int)
+
+    def predict_proba(self, X):
+        predictions = self.model.predict(X, verbose=0)
+        return np.hstack([1 - predictions, predictions])
+
+    def score(self, X, y):
+        return self.model.evaluate(X, y)
