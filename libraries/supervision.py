@@ -13,8 +13,6 @@ import keras
 class ColumnRemoverTransformer(BaseEstimator, TransformerMixin):
     """
     Custom transformer that removes specified columns from a DataFrame.
-
-    :param columns: List of column names to remove from the DataFrame
     """
 
     def __init__(self, columns):
@@ -22,55 +20,29 @@ class ColumnRemoverTransformer(BaseEstimator, TransformerMixin):
         self.columns = columns
 
     def fit(self, X, y=None):
-        """
-        The fit method is a no-op for this transformer. It is required by scikit-learn,
-        but doesn't need to do anything since the transformer just removes columns.
-
-        :param X: Input data (ignored in this transformer)
-        :param y: Target data (ignored in this transformer)
-        :return: self (the transformer object)
-        """
         return self
 
     def transform(self, X):
-        """
-        Removes the specified columns from the DataFrame.
 
-        :param X: DataFrame with columns to be removed
-        :return: Transformed DataFrame with specified columns removed
-        """
         # Assert that the input X is a pandas DataFrame
         assert isinstance(X, pd.DataFrame)
 
         # Drop the specified columns from the DataFrame
         X = X.drop(columns=self.columns)
-
         return X
 
 
 class BMICalculatorTransformer(BaseEstimator, TransformerMixin):
     """
-    Custom transformer that calculates the BMI (Body Mass Index) and adds it as a new column.
+    Custom transformer that calculates the BMI and adds it as a new column.
     The formula for BMI is: BMI = weight / (height in meters)^2.
     """
 
     def fit(self, X, y=None):
-        """
-        The fit method is a no-op for this transformer, as no fitting is required for BMI calculation.
-
-        :param X: Input data (ignored in this transformer)
-        :param y: Target data (ignored in this transformer)
-        :return: self (the transformer object)
-        """
         return self
 
     def transform(self, X):
-        """
-        Adds a new column 'BMI' to the DataFrame based on weight and height.
 
-        :param X: DataFrame with 'weight' (kg) and 'height' (cm) columns
-        :return: Transformed DataFrame with an added 'BMI' column
-        """
         # Assert that the input X is a pandas DataFrame
         assert isinstance(X, pd.DataFrame)
 
@@ -81,6 +53,10 @@ class BMICalculatorTransformer(BaseEstimator, TransformerMixin):
 
 
 def get_encoder(onehot_columns):
+    """
+    Returns a ColumnTransformer object that one-hot encodes the specified columns.
+    Used by the RandomForestClassifier.
+    """
     return ColumnTransformer(
         transformers=[
             ("onehot", OneHotEncoder(handle_unknown="ignore"), onehot_columns),
@@ -91,6 +67,10 @@ def get_encoder(onehot_columns):
 
 
 def get_general_preprocessor(columns, imputer):
+    """
+    Returns a ColumnTransformer object that imputes missing values in the specified columns.
+    Used only for numerical columns. Used by RandomForest and XGB.
+    """
     return ColumnTransformer(
         transformers=[
             (
@@ -105,6 +85,10 @@ def get_general_preprocessor(columns, imputer):
 
 
 def get_scaler_encoder(columns_to_scale, columns_to_encode):
+    """
+    Returns a ColumnTransformer object that scales and one-hot encodes the specified columns.
+    Used by SVM and NN.
+    """
     return ColumnTransformer(
         transformers=[
             (
@@ -122,6 +106,10 @@ def get_scaler_encoder(columns_to_scale, columns_to_encode):
 def get_preprocessor_svm(
     general_imputer, profile_imputer, general_columns, profile_columns
 ):
+    """
+    Returns a ColumnTransformer object that imputes missing values in the specified columns.
+    Used by SVM and NN.
+    """
     return ColumnTransformer(
         transformers=[
             (
@@ -137,6 +125,7 @@ def get_preprocessor_svm(
 
 
 def create_model(input_shape):
+    """returns untrained keras model. Used in grid search of NN"""
     model = keras.models.Sequential(
         [
             keras.layers.Input(shape=(input_shape,)),
@@ -150,6 +139,11 @@ def create_model(input_shape):
 
 
 class SklearnKerasClassifier(BaseEstimator):
+    """
+    Wrapper for Keras model to be used in sklearn pipelines.
+    The scikeras wrapper has a bug, and cannot be used to save model after training.
+    """
+
     def __init__(self, model):
         self.model = model
 
