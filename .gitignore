@@ -1,8 +1,10 @@
 #random files
 dataset/
-results/*
+results/*.csv
+results/*.lz4
+results/*.txt
 !results/
-models/*
+models/best_rf.pkl
 
 venexpl
 
