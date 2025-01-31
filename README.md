@@ -1,4 +1,6 @@
-## Data Mining Project 2024/2025 Unipi MSc. Computer Science
+## Data Mining Project 
+
+# A.Y. 2024/2025 - Unipi MSc. Computer Science
 
 Group 14:
 - Tommaso Di Vito
